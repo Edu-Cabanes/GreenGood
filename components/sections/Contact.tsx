@@ -1,6 +1,6 @@
 export default function Contact() {
   const message = "Hola! Me gustaría solicitar un presupuesto sin compromiso para mi jardín.";
-  const whatsappHref = `https://wa.me/34635687837?text=${encodeURIComponent(message)}`;
+  const whatsappHref = `https://wa.me/34615667820?text=${encodeURIComponent(message)}`;
 
   return (
     <section
