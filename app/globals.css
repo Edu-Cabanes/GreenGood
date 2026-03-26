@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #2d5a27;
+  --color-anthracite: #2f2f2f;
+  --color-cream: #fdfcf0;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+
+@layer base {
+  body {
+    @apply bg-cream text-anthracite antialiased;
+  }
+}
+
+@keyframes subtle-zoom {
+  0% { transform: scale(1.05); }
+  100% { transform: scale(1.1); }
+}
+
+.animate-subtle-zoom {
+  animation: subtle-zoom 20s ease-in-out infinite alternate;
+}

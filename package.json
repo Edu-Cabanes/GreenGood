@@ -1,21 +1,28 @@
 {
   "name": "greengood",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Edu-Cabanes/GreenGood.git"
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.477.0",
+    "next": "15.1.7",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tailwind-merge": "^3.0.1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Edu-Cabanes/GreenGood/issues"
-  },
-  "homepage": "https://github.com/Edu-Cabanes/GreenGood#readme"
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^20.14.10",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^5.5.4"
+  }
 }
