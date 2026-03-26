@@ -3,6 +3,7 @@ import BeforeAfter from "@/components/sections/BeforeAfter";
 import Services from "@/components/sections/Services";
 import About from "@/components/sections/About";
 import Testimonials from "@/components/sections/Testimonials";
+import BlogPreview from "@/components/sections/BlogPreview";
 import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
 
@@ -94,6 +95,9 @@ export default function Home() {
 
       {/* ── Testimonios ── */}
       <Testimonials />
+
+      {/* ── Blog (Novedad SEO) ── */}
+      <BlogPreview />
 
       {/* ── FAQ ── */}
       <FAQ />

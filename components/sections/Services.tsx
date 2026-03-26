@@ -1,25 +1,43 @@
 "use client";
 
-import { Leaf, Wrench, Waves } from "lucide-react";
+import { Leaf, Wrench, Waves, Building2, Trees, Trash2 } from "lucide-react";
 
 const services = [
   {
-    icon: Leaf,
-    title: "Césped Artificial",
-    desc: "Venta e instalación con materiales de alta gama certificados. El verde perfecto durante todo el año sin necesidad de riego ni siega.",
-    benefit: "Sin mantenimiento constante",
+    icon: Trees,
+    title: "Jardinería General",
+    desc: "Mantenimiento integral de praderas, podas especializadas, control de plagas, abonado profesional y diseño de sistemas de riego eficientes.",
+    benefit: "Jardines siempre impecables",
   },
   {
-    icon: Wrench,
-    title: "Mantenimiento Integral",
-    desc: "Podas, desbroces y sistemas de riego automático para particulares, comunidades y empresas. Tu jardín en su mejor estado siempre.",
-    benefit: "Contratos anuales disponibles",
+    icon: Leaf,
+    title: "Césped Artificial",
+    desc: "Venta e instalación con materiales de alta gama certificados. El verde perfecto durante todo el año sin necesidad de riego ni siega constante.",
+    benefit: "Sin mantenimiento diario",
+  },
+  {
+    icon: Trash2,
+    title: "Limpieza de Zonas Comunes",
+    desc: "Servicio de limpieza profesional para garajes, portales, accesos y zonas exteriores en urbanizaciones y edificios residenciales.",
+    benefit: "Espacios seguros y limpios",
   },
   {
     icon: Waves,
-    title: "Piscinas y Comunidades",
-    desc: "Limpieza profunda, rejuntado y puesta a punto integral de piscinas. Gestionamos urbanizaciones y comunidades de propietarios.",
-    benefit: "Apertura de temporada garantizada",
+    title: "Mantenimiento de Piscinas",
+    desc: "Limpieza profunda, rejuntado, análisis de aguas y puesta a punto integral de piscinas. Gestión técnica durante la temporada de baño.",
+    benefit: "Aguas cristalinas GARANTIZADAS",
+  },
+  {
+    icon: Wrench,
+    title: "Servicios a Comunidades",
+    desc: "Soluciones completas para comunidades de propietarios. Unificamos cuidado de jardines, piscinas y limpiezas en un solo servicio de confianza.",
+    benefit: "Comodidad sin intermediarios",
+  },
+  {
+    icon: Building2,
+    title: "Urbanizaciones y Residencias",
+    desc: "Planes a gran escala para urbanizaciones completas y residencias. Mantenimiento del paisaje y vialidad con maquinaria especializada.",
+    benefit: "Cobertura total 360º",
   },
 ];
 
