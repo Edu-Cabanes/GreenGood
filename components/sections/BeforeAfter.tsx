@@ -6,9 +6,10 @@ import Image from "next/image";
 interface BeforeAfterProps {
   beforeImage: string;
   afterImage: string;
+  label?: string;
 }
 
-export default function BeforeAfter({ beforeImage, afterImage }: BeforeAfterProps) {
+export default function BeforeAfter({ beforeImage, afterImage, label }: BeforeAfterProps) {
   const [sliderPos, setSliderPos] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -25,7 +26,7 @@ export default function BeforeAfter({ beforeImage, afterImage }: BeforeAfterProp
   return (
     <div 
       ref={containerRef}
-      className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden cursor-ew-resize select-none border-4 border-white shadow-2xl"
+      className="relative w-full aspect-video rounded-2xl overflow-hidden cursor-ew-resize select-none border-4 border-white shadow-2xl"
       onMouseMove={handleMove}
       onTouchMove={handleMove}
     >
@@ -70,7 +71,14 @@ export default function BeforeAfter({ beforeImage, afterImage }: BeforeAfterProp
         </div>
       </div>
 
-      {/* Labels */}
+      {/* Service Label */}
+      {label && (
+        <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-anthracite/70 backdrop-blur-sm text-white text-xs px-4 py-1.5 rounded-full uppercase font-bold tracking-widest z-30">
+          {label}
+        </div>
+      )}
+
+      {/* Before/After Labels */}
       <div className="absolute bottom-4 left-4 bg-anthracite/80 text-white text-xs px-3 py-1 rounded-full uppercase font-bold tracking-widest z-30">
         Antes
       </div>

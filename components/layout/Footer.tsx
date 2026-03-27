@@ -4,7 +4,7 @@ import Image from "next/image";
 const mainLinks = [
   { label: "Inicio", href: "/#inicio" },
   { label: "Servicios", href: "/#servicios" },
-  { label: "Proyectos", href: "/#galeria" },
+  { label: "Proyectos", href: "/proyectos" },
   { label: "Nosotros", href: "/#nosotros" },
   { label: "Blog", href: "/#blog" },
 ];
@@ -13,6 +13,7 @@ const legalLinks = [
   { label: "Aviso Legal", href: "/aviso-legal" },
   { label: "Política de Privacidad", href: "/politica-privacidad" },
   { label: "Política de Cookies", href: "/cookies" },
+  { label: "Accesibilidad", href: "/accesibilidad" },
 ];
 
 export default function Footer() {
@@ -70,8 +71,8 @@ export default function Footer() {
               {legalLinks.map((link) => (
                 <li key={link.href}>
                   <Link
-                    href={link.href}
-                    className="text-sm hover:text-brand-green transition-colors"
+                     href={link.href}
+                     className="text-sm hover:text-brand-green transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -88,9 +89,9 @@ export default function Footer() {
             <div className="flex flex-col gap-3 text-sm">
               <p>Salamanca, Castilla y León</p>
               <p>Lunes a Viernes: 9:00 - 19:00</p>
-              <a href="mailto:info@greengood.es" className="hover:text-white transition-colors">info@greengood.es</a>
+              <a href="mailto:info@jardineriagreengood.es" className="hover:text-white transition-colors">info@jardineriagreengood.es</a>
               <a
-                href="https://wa.me/34635687837"
+                href="https://wa.me/34615667820"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-brand-green hover:text-green-400 transition-colors font-bold mt-2"

@@ -72,12 +72,12 @@ export default function About() {
         <div className="relative hidden md:block pb-6">
           <div className="relative aspect-square rounded-3xl overflow-hidden">
             <Image
-              src="/images/despues-jardin-cesped-artificial.jpg"
+              src="/images/equipo.png"
               alt="Equipo GreenGood trabajando en Salamanca"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-tr from-anthracite/60 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-tr from-anthracite/60 via-transparent to-transparent" />
           </div>
 
           {/* Stats card flotante — desktop only */}

@@ -1,11 +1,45 @@
 import Image from "next/image";
-import BeforeAfter from "@/components/sections/BeforeAfter";
+import BeforeAfterCarousel from "@/components/sections/BeforeAfterCarousel";
+import type { ProjectSlide } from "@/components/sections/BeforeAfterCarousel";
 import Services from "@/components/sections/Services";
 import About from "@/components/sections/About";
 import Testimonials from "@/components/sections/Testimonials";
 import BlogPreview from "@/components/sections/BlogPreview";
 import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
+
+const projects: ProjectSlide[] = [
+  {
+    label: "Jardinería General",
+    beforeImage: "/images/Jardinería General ANTES.png",
+    afterImage: "/images/Jardinería General DESPUES.png",
+  },
+  {
+    label: "Césped Artificial",
+    beforeImage: "/images/Césped Artificial ANTES.png",
+    afterImage: "/images/Césped Artificial DESPUES.png",
+  },
+  {
+    label: "Zonas Comunes",
+    beforeImage: "/images/Limpiezas de Jardines y Zonas Comunes ANTES.png",
+    afterImage: "/images/Limpiezas de Jardines y Zonas Comunes DESPUES.png",
+  },
+  {
+    label: "Mantenimiento Piscinas",
+    beforeImage: "/images/Mantenimiento de Piscinas ANTES.png",
+    afterImage: "/images/Mantenimiento de Piscinas DESPUES.png",
+  },
+  {
+    label: "Comunidades",
+    beforeImage: "/images/Mantenimiento de Comunidades ANTES.png",
+    afterImage: "/images/Mantenimiento de Comunidades DESPUES.png",
+  },
+  {
+    label: "Urbanizaciones",
+    beforeImage: "/images/Mantenimiento de urbanizaciones y residencias ANTES.png",
+    afterImage: "/images/Mantenimiento de urbanizaciones y residencias DESPUES.png",
+  },
+];
 
 export default function Home() {
   return (
@@ -15,14 +49,16 @@ export default function Home() {
         id="inicio"
         className="relative h-[90vh] flex items-center justify-center bg-anthracite overflow-hidden"
       >
-        <div className="absolute inset-0 opacity-40">
+        <div className="absolute inset-0 opacity-50">
           <Image
-            src="/images/despues-jardin-cesped-artificial.jpg"
-            alt="Jardín espectacular GreenGood"
+            src="/images/hero-bg.png"
+            alt="Equipo GreenGood trabajando en jardín"
             fill
             className="object-cover scale-105 animate-subtle-zoom"
             priority
           />
+          {/* Gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-linear-to-r from-anthracite/80 via-anthracite/50 to-transparent" />
         </div>
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           <p className="text-brand-green font-bold text-sm tracking-[0.25em] uppercase mb-5">
@@ -76,14 +112,11 @@ export default function Home() {
             Resultados que <span className="text-brand-green">convencen</span>
           </h2>
           <p className="text-slate-400 mb-12 max-w-xl mx-auto italic">
-            De un solar vacío a un oasis verde en tiempo récord.{" "}
+            Transformaciones reales en Salamanca.{" "}
             <strong className="text-anthracite not-italic">Desliza la imagen</strong> para ver el antes
-            y el después.
+            y el después — usa las flechas para ver más proyectos.
           </p>
-          <BeforeAfter
-            beforeImage="/images/antes-jardin-cesped-artificial.jpg"
-            afterImage="/images/despues-jardin-cesped-artificial.jpg"
-          />
+          <BeforeAfterCarousel projects={projects} />
         </div>
       </section>
 
