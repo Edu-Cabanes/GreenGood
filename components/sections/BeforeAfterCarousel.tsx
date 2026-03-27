@@ -40,10 +40,11 @@ export default function BeforeAfterCarousel({
     const observer = new ResizeObserver((entries) => {
       for (const entry of entries) {
         const width = entry.contentRect.width;
-        // Si el item ocupa el 70% del contenedor:
-        const itemWidth = width * 0.7;
+        const isMobile = window.innerWidth < 768;
+        const itemWidth = width * (isMobile ? 0.85 : 0.7);
         // R = (w/2) / tan(PI/N)
-        const calcRadius = (itemWidth / 2) / Math.tan(Math.PI / projects.length);
+        // Add a 10% spacing buffer so they don't overlap too tight
+        const calcRadius = ((itemWidth / 2) / Math.tan(Math.PI / projects.length)) * 1.1;
         setRadius(calcRadius);
       }
     });
@@ -129,7 +130,7 @@ export default function BeforeAfterCarousel({
       {/* 3D Spinner Container */}
       <div
         ref={containerRef}
-        className="relative w-full h-[500px] md:h-[600px] flex items-center justify-center cursor-grab active:cursor-grabbing"
+        className="relative w-full h-[350px] sm:h-[450px] md:h-[600px] flex items-center justify-center cursor-grab active:cursor-grabbing"
         style={{
           transformStyle: "preserve-3d",
           transform: `translateZ(${-radius}px) rotateY(${finalRotation}deg)`,
@@ -176,16 +177,16 @@ export default function BeforeAfterCarousel({
       <button
         onClick={prev}
         aria-label="Proyecto anterior"
-        className="absolute left-2 top-1/2 -translate-y-1/2 z-40 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center transition-all hover:bg-white hover:scale-110"
+        className="absolute left-1 md:left-2 top-1/2 -translate-y-1/2 z-40 w-10 h-10 md:w-12 md:h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center transition-all hover:bg-white hover:scale-110"
       >
-        <ChevronLeft className="w-6 h-6 text-anthracite" />
+        <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-anthracite" />
       </button>
       <button
         onClick={next}
         aria-label="Proyecto siguiente"
-        className="absolute right-2 top-1/2 -translate-y-1/2 z-40 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center transition-all hover:bg-white hover:scale-110"
+        className="absolute right-1 md:right-2 top-1/2 -translate-y-1/2 z-40 w-10 h-10 md:w-12 md:h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center transition-all hover:bg-white hover:scale-110"
       >
-        <ChevronRight className="w-6 h-6 text-anthracite" />
+        <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-anthracite" />
       </button>
 
       {/* Dot Indicators */}
