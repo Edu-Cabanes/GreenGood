@@ -7,6 +7,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import BlogPreview from "@/components/sections/BlogPreview";
 import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
+import Stats from "@/components/sections/Stats";
 
 const projects: ProjectSlide[] = [
   {
@@ -119,6 +120,9 @@ export default function Home() {
           <BeforeAfterCarousel projects={projects} />
         </div>
       </section>
+
+      {/* ── Estadísticas ── */}
+      <Stats />
 
       {/* ── Servicios ── */}
       <Services />

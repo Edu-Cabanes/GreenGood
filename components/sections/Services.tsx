@@ -5,18 +5,18 @@ import Link from "next/link";
 
 const services = [
   {
-    icon: Trees,
-    slug: "jardineria-general",
-    title: "Jardinería General",
-    desc: "Mantenimiento integral de praderas, podas especializadas, control de plagas, abonado profesional y diseño de sistemas de riego eficientes.",
-    benefit: "Jardines siempre impecables",
-  },
-  {
     icon: Leaf,
     slug: "cesped-artificial",
     title: "Césped Artificial",
     desc: "Venta e instalación con materiales de alta gama certificados. El verde perfecto durante todo el año sin necesidad de riego ni siega constante.",
     benefit: "Sin mantenimiento diario",
+  },
+  {
+    icon: Trees,
+    slug: "jardineria-general",
+    title: "Jardinería General",
+    desc: "Mantenimiento integral de praderas, podas especializadas, control de plagas, abonado profesional y diseño de sistemas de riego eficientes.",
+    benefit: "Jardines siempre impecables",
   },
   {
     icon: Trash2,
@@ -65,23 +65,41 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, idx) => {
             const Icon = service.icon;
+            const isFeatured = idx === 0;
+
             return (
               <Link
                 key={idx}
                 href={`/servicios/${service.slug}`}
-                className="group relative p-10 bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-transparent hover:border-brand-green/20 hover:-translate-y-2 overflow-hidden flex flex-col h-full cursor-pointer"
+                className={`group relative p-10 bg-white rounded-2xl transition-all duration-300 overflow-hidden flex flex-col h-full cursor-pointer ${
+                  isFeatured 
+                    ? "md:col-span-2 shadow-xl border-2 border-brand-green hover:-translate-y-1" 
+                    : "shadow-sm border border-transparent hover:border-brand-green/20 hover:shadow-2xl hover:-translate-y-1"
+                }`}
               >
                 {/* Background decorator */}
-                <div className="absolute -top-8 -right-8 w-32 h-32 bg-brand-green/5 rounded-full group-hover:bg-brand-green/10 transition-colors duration-300" />
+                <div className={`absolute -top-8 -right-8 w-32 h-32 rounded-full transition-colors duration-300 ${
+                  isFeatured ? 'bg-brand-green/10 group-hover:bg-brand-green/20' : 'bg-brand-green/5 group-hover:bg-brand-green/10'
+                }`} />
 
-                <div className="relative z-10 flex-grow">
-                  <div className="w-14 h-14 bg-brand-green/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-green/20 transition-colors">
-                    <Icon className="w-7 h-7 text-brand-green" />
+                {isFeatured && (
+                  <div className="absolute top-6 right-6 bg-brand-green text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-md">
+                    Servicio Estrella
                   </div>
-                  <h3 className="text-xl font-black mb-3 text-anthracite uppercase tracking-tight group-hover:text-brand-green transition-colors">
+                )}
+
+                <div className="relative z-10 grow">
+                  <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-colors ${
+                    isFeatured ? 'bg-brand-green text-white' : 'bg-brand-green/10 text-brand-green group-hover:bg-brand-green/20'
+                  }`}>
+                    <Icon className="w-7 h-7" />
+                  </div>
+                  <h3 className={`text-xl font-black mb-3 text-anthracite uppercase tracking-tight transition-colors ${
+                    !isFeatured && 'group-hover:text-brand-green'
+                  }`}>
                     {service.title}
                   </h3>
-                  <p className="text-slate-500 leading-relaxed text-sm mb-6">
+                  <p className="text-slate-500 leading-relaxed text-sm mb-6 max-w-md">
                     {service.desc}
                   </p>
                   
