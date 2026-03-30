@@ -5,24 +5,24 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    q: "¿Instaláis en toda la provincia de Salamanca?",
-    a: "Sí. Cubrimos toda la provincia de Salamanca sin recargo por desplazamiento, incluyendo pueblos y urbanizaciones. También operamos en zonas de Castilla y León limítrofes como Zamora, Ávila y Valladolid.",
+    q: "¿Dáis servicio en toda la provincia de Salamanca?",
+    a: "Damos servicio en Salamanca capital y en toda su área metropolitana, incluyendo el cinturón de pueblos y urbanizaciones colindantes. Para otras zonas de la provincia, consúltanos disponibilidad.",
   },
   {
-    q: "¿Qué garantía tiene el césped artificial que instaláis?",
-    a: "Trabajamos con materiales certificados de alta gama con garantías de fabricante de hasta 8 años. Además, ofrecemos garantía propia de instalación de 2 años.",
+    q: "¿Qué garantía tienen vuestras instalaciones?",
+    a: "Trabajamos con materiales de primera calidad que cuentan con sus correspondientes garantías de fabricante. Todas nuestras instalaciones y servicios cumplen estrictamente con la normativa de garantía vigente.",
   },
   {
     q: "¿Cuánto tarda una instalación de césped artificial?",
-    a: "Un jardín residencial normal (50-100 m²) se instala en 1-2 días de trabajo. Proyectos más grandes se presupuestan con planificación de fases para minimizar molestias.",
+    a: "El tiempo de ejecución depende directamente de los metros cuadrados y de la preparación previa que necesite el terreno. Siempre planificamos el trabajo para ser lo más ágiles posible y minimizar las molestias.",
   },
   {
-    q: "¿Hacéis presupuestos sin compromiso?",
-    a: "Absolutamente. Visitamos tu jardín, tomamos medidas y te enviamos el presupuesto detallado en menos de 24 horas, sin ningún coste ni obligación de contratar.",
+    q: "¿Cómo puedo obtener un presupuesto para mi jardín?",
+    a: "Solo tienes que contactar con nosotros. Realizamos una valoración de tus necesidades específicas, y te entregamos un presupuesto personalizado sin compromiso.",
   },
   {
-    q: "¿Trabajáis con comunidades de propietarios?",
-    a: "Sí. Gestionamos comunidades de cualquier tamaño: piscinas comunitarias, zonas verdes, jardines y riego automático. Disponemos de contratos de mantenimiento adaptados.",
+    q: "¿Ofrecéis servicios de mantenimiento para comunidades?",
+    a: "Sí. Tenemos amplia experiencia en el cuidado de zonas verdes, piscinas y áreas comunes para comunidades de propietarios de Salamanca, adaptándonos a lo que cada finca necesite.",
   },
 ];
 
@@ -55,15 +55,13 @@ export default function FAQ() {
               >
                 <span className="pr-4 text-sm md:text-base">{faq.q}</span>
                 <ChevronDown
-                  className={`w-5 h-5 shrink-0 text-brand-green transition-transform duration-300 ${
-                    open === idx ? "rotate-180" : ""
-                  }`}
+                  className={`w-5 h-5 shrink-0 text-brand-green transition-transform duration-300 ${open === idx ? "rotate-180" : ""
+                    }`}
                 />
               </button>
               <div
-                className={`grid transition-all duration-300 ease-in-out ${
-                  open === idx ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-                }`}
+                className={`grid transition-all duration-300 ease-in-out ${open === idx ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                  }`}
               >
                 <div className="overflow-hidden">
                   <p className="px-6 pb-6 text-slate-500 text-sm leading-relaxed border-t border-brand-green/5 pt-4">

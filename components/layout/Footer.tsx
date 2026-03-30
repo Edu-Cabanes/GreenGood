@@ -4,7 +4,6 @@ import Image from "next/image";
 const mainLinks = [
   { label: "Inicio", href: "/#inicio" },
   { label: "Servicios", href: "/#servicios" },
-  { label: "Proyectos", href: "/proyectos" },
   { label: "Nosotros", href: "/#nosotros" },
   { label: "Blog", href: "/#blog" },
 ];
@@ -20,7 +19,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-anthracite text-slate-400 py-16 px-4">
+    <footer className="bg-anthracite text-slate-300 py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
@@ -28,18 +27,18 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-4">
               <div className="relative w-10 h-10">
                 <Image
-                  src="/images/jardineria.png.webp"
+                  src="/images/logo.png"
                   alt="GreenGood Logo"
                   fill
-                  className="object-contain"
+                  className="object-contain filter brightness-0 invert"
                 />
               </div>
               <span className="font-black text-xl text-white tracking-tight">
-                GREEN<span className="text-brand-green">GOOD</span>
+                GREEN<span className="text-accent-green">GOOD</span>
               </span>
             </Link>
-            <p className="text-sm leading-relaxed mb-4">
-              Especialistas en paisajismo y jardinería en Salamanca y Castilla y León desde hace más de 20 años.
+            <p className="text-sm leading-relaxed mb-4 text-slate-400">
+              Especialistas en <span className="text-white font-medium">jardinería profesional</span> en Salamanca y alrededores con más de 18 años de experiencia.
             </p>
           </div>
 
@@ -53,7 +52,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm hover:text-brand-green transition-colors"
+                    className="text-sm hover:text-accent-green transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -72,7 +71,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                      href={link.href}
-                     className="text-sm hover:text-brand-green transition-colors"
+                     className="text-sm hover:text-accent-green transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -87,16 +86,24 @@ export default function Footer() {
               Contacto
             </h3>
             <div className="flex flex-col gap-3 text-sm">
-              <p>Salamanca, Castilla y León</p>
+              <p>Salamanca y alrededores</p>
               <p>Lunes a Viernes: 9:00 - 19:00</p>
               <a href="mailto:info@jardineriagreengood.es" className="hover:text-white transition-colors">info@jardineriagreengood.es</a>
               <a
                 href="https://wa.me/34615667820"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-brand-green hover:text-green-400 transition-colors font-bold mt-2"
+                className="inline-flex items-center gap-2 text-white hover:text-accent-green transition-colors font-bold mt-2"
               >
                 WhatsApp directo →
+              </a>
+              <a
+                href="https://www.instagram.com/jardineriagreengood?igsh=MTEybmY1MWx6ZGwzcQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-white hover:text-accent-green transition-colors font-bold mt-2"
+              >
+                Síguenos en Instagram
               </a>
             </div>
           </div>

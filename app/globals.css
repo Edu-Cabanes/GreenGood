@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-green: #2d5a27;
+  --color-brand-green: #064e3b; /* emerald-950 */
+  --color-accent-green: #dae2d5; /* sage-200 */
   --color-anthracite: #2f2f2f;
-  --color-cream: #fdfcf0;
+  --color-cream: #fafaf9; /* stone-50 */
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, "Times New Roman", Times, serif;
 }
 
 

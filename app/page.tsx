@@ -1,6 +1,4 @@
 import Image from "next/image";
-import BeforeAfterCarousel from "@/components/sections/BeforeAfterCarousel";
-import type { ProjectSlide } from "@/components/sections/BeforeAfterCarousel";
 import Services from "@/components/sections/Services";
 import About from "@/components/sections/About";
 import Testimonials from "@/components/sections/Testimonials";
@@ -8,39 +6,6 @@ import BlogPreview from "@/components/sections/BlogPreview";
 import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
 import Stats from "@/components/sections/Stats";
-
-const projects: ProjectSlide[] = [
-  {
-    label: "Jardinería General",
-    beforeImage: "/images/Jardinería General ANTES.png",
-    afterImage: "/images/Jardinería General DESPUES.png",
-  },
-  {
-    label: "Césped Artificial",
-    beforeImage: "/images/Césped Artificial ANTES.png",
-    afterImage: "/images/Césped Artificial DESPUES.png",
-  },
-  {
-    label: "Zonas Comunes",
-    beforeImage: "/images/Limpiezas de Jardines y Zonas Comunes ANTES.png",
-    afterImage: "/images/Limpiezas de Jardines y Zonas Comunes DESPUES.png",
-  },
-  {
-    label: "Mantenimiento Piscinas",
-    beforeImage: "/images/Mantenimiento de Piscinas ANTES.png",
-    afterImage: "/images/Mantenimiento de Piscinas DESPUES.png",
-  },
-  {
-    label: "Comunidades",
-    beforeImage: "/images/Mantenimiento de Comunidades ANTES.png",
-    afterImage: "/images/Mantenimiento de Comunidades DESPUES.png",
-  },
-  {
-    label: "Urbanizaciones",
-    beforeImage: "/images/Mantenimiento de urbanizaciones y residencias ANTES.png",
-    afterImage: "/images/Mantenimiento de urbanizaciones y residencias DESPUES.png",
-  },
-];
 
 export default function Home() {
   return (
@@ -50,42 +15,50 @@ export default function Home() {
         id="inicio"
         className="relative h-[90vh] flex items-center justify-center bg-anthracite overflow-hidden"
       >
-        <div className="absolute inset-0 opacity-50">
+        <div className="absolute inset-0">
           <Image
-            src="/images/hero-bg.png"
-            alt="Equipo GreenGood trabajando en jardín"
+            src="/images/rollo de césped artificial.png"
+            alt="Instalación premium de césped artificial"
             fill
-            className="object-cover scale-105 animate-subtle-zoom"
+            className="object-cover animate-subtle-zoom"
             priority
           />
-          {/* Gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-linear-to-r from-anthracite/80 via-anthracite/50 to-transparent" />
+          {/* Sofisticado gradient overlay */}
+          <div className="absolute inset-0 bg-linear-to-r from-emerald-950/80 via-emerald-950/40 to-transparent" />
         </div>
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <p className="text-brand-green font-bold text-sm tracking-[0.25em] uppercase mb-5">
-            Paisajismo y Jardinería · Salamanca
-          </p>
-          <h1 className="text-6xl md:text-8xl font-black text-white mb-6 uppercase tracking-tighter leading-none">
-            Tu jardín en{" "}
-            <span className="text-brand-green">buenas manos</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-cream/80 mb-10 font-light max-w-2xl mx-auto">
-            Profesionalidad y cercanía en Salamanca. Presupuesto sin compromiso
-            en menos de 24 horas.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#contacto"
-              className="bg-brand-green hover:bg-opacity-90 text-white px-10 py-5 rounded-xl font-extrabold text-sm tracking-widest transition-all transform hover:scale-105 active:scale-95 shadow-2xl"
-            >
-              SOLICITAR PRESUPUESTO
-            </a>
-            <a
-              href="#galeria"
-              className="bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white hover:text-anthracite px-10 py-5 rounded-xl font-extrabold text-sm tracking-widest transition-all"
-            >
-              VER PROYECTOS
-            </a>
+        
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 flex items-center h-full">
+          <div className="max-w-2xl bg-white/5 backdrop-blur-md border border-white/10 p-6 sm:p-8 md:p-12 rounded-3xl md:rounded-4xl shadow-2xl">
+            <div className="inline-flex items-center gap-3 mb-6 bg-white/10 px-4 py-2 rounded-full border border-white/10">
+              <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse" />
+              <p className="text-accent-green font-bold text-xs tracking-widest uppercase">
+                Jardinería en Salamanca
+              </p>
+            </div>
+            
+            <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-[1.05] tracking-tight">
+              Tu jardín en <br/>
+              <span className="text-accent-green italic">buenas manos</span>
+            </h1>
+            
+            <p className="text-lg md:text-xl text-slate-200 mb-10 font-light leading-relaxed">
+              18 años de experiencia instalando el mejor césped artificial y transformando exteriores. Especialistas en soluciones duraderas para tu jardín.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="/#contacto"
+                className="bg-accent-green text-emerald-950 shadow-[0_0_20px_rgba(218,226,213,0.3)] hover:shadow-[0_0_30px_rgba(218,226,213,0.5)] hover:bg-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all duration-300"
+              >
+                Solicitar Presupuesto
+              </a>
+              <a
+                href="/#servicios"
+                className="bg-emerald-950/40 backdrop-blur-md border border-white/20 text-white hover:bg-emerald-950 px-8 py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center"
+              >
+                Ver Servicios
+              </a>
+            </div>
           </div>
         </div>
 
@@ -100,26 +73,8 @@ export default function Home() {
 
       {/* ── Trust Bar ── */}
       <div className="bg-brand-green py-4 text-white text-center font-bold text-xs tracking-[0.25em] uppercase">
-        +1.800 proyectos realizados · Salamanca y Castilla y León · Presupuesto en &lt;24h
+        +1.500 proyectos realizados · Salamanca y alrededores · Presupuesto en &lt;24h
       </div>
-
-      {/* ── Galería Antes/Después ── */}
-      <section id="galeria" className="py-28 bg-white px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-brand-green font-bold text-sm tracking-[0.2em] uppercase mb-3">
-            Nuestros proyectos
-          </p>
-          <h2 className="text-4xl md:text-5xl font-black text-anthracite uppercase tracking-tighter leading-none mb-4">
-            Resultados que <span className="text-brand-green">convencen</span>
-          </h2>
-          <p className="text-slate-400 mb-12 max-w-xl mx-auto italic">
-            Transformaciones reales en Salamanca.{" "}
-            <strong className="text-anthracite not-italic">Desliza la imagen</strong> para ver el antes
-            y el después — usa las flechas para ver más proyectos.
-          </p>
-          <BeforeAfterCarousel projects={projects} />
-        </div>
-      </section>
 
       {/* ── Estadísticas ── */}
       <Stats />

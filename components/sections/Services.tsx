@@ -1,6 +1,7 @@
 "use client";
 
-import { Leaf, Wrench, Waves, Building2, Trees, Trash2, ArrowRight } from "lucide-react";
+import { ArrowRight, Leaf, Trees, Waves, Users } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const services = [
@@ -8,107 +9,131 @@ const services = [
     icon: Leaf,
     slug: "cesped-artificial",
     title: "Césped Artificial",
-    desc: "Venta e instalación con materiales de alta gama certificados. El verde perfecto durante todo el año sin necesidad de riego ni siega constante.",
+    desc: "Venta e instalación con materiales de alta gama certificados. Diseñamos espacios duraderos, suaves al tacto y siempre perfectos, sin necesidad de riego ni siega.",
     benefit: "Sin mantenimiento diario",
+    image: "/images/rollo de césped artificial.png",
   },
   {
     icon: Trees,
     slug: "jardineria-general",
     title: "Jardinería General",
-    desc: "Mantenimiento integral de praderas, podas especializadas, control de plagas, abonado profesional y diseño de sistemas de riego eficientes.",
+    desc: "Mantenimiento integral de praderas, podas especializadas, control de plagas, abonado profesional y diseño paisajístico.",
     benefit: "Jardines siempre impecables",
-  },
-  {
-    icon: Trash2,
-    slug: "limpieza-comunes",
-    title: "Limpieza de Zonas Comunes",
-    desc: "Servicio de limpieza profesional para garajes, portales, accesos y zonas exteriores en urbanizaciones y edificios residenciales.",
-    benefit: "Espacios seguros y limpios",
+    image: "/images/Jardieria general.png",
   },
   {
     icon: Waves,
     slug: "piscinas",
     title: "Mantenimiento de Piscinas",
-    desc: "Limpieza profunda, rejuntado, análisis de aguas y puesta a punto integral de piscinas. Gestión técnica durante la temporada de baño.",
-    benefit: "Aguas cristalinas GARANTIZADAS",
+    desc: "Limpieza profunda, análisis de aguas biológico y puesta a punto integral de instalaciones para disfrutar sin preocupaciones.",
+    benefit: "Aguas cristalinas óptimas",
+    image: "/images/Mantenimiento de piscina.png",
   },
   {
-    icon: Wrench,
+    icon: Users,
     slug: "servicios-comunidades",
     title: "Servicios a Comunidades",
-    desc: "Soluciones completas para comunidades de propietarios. Unificamos cuidado de jardines, piscinas y limpiezas en un solo servicio de confianza.",
+    desc: "Conservación de grandes áreas. Unificamos cuidado de jardines, piscinas y limpieza viaria en un solo servicio unificado y fiable.",
     benefit: "Comodidad sin intermediarios",
-  },
-  {
-    icon: Building2,
-    slug: "urbanizaciones",
-    title: "Urbanizaciones y Residencias",
-    desc: "Planes a gran escala para urbanizaciones completas y residencias. Mantenimiento del paisaje y vialidad con maquinaria especializada.",
-    benefit: "Cobertura total 360º",
+    image: "/images/Servicios para Comunidades y Grandes Áreas.png",
   },
 ];
 
 export default function Services() {
+  const featured = services[0];
+  const rest = services.slice(1);
+
   return (
-    <section id="servicios" className="py-28 bg-cream px-4">
+    <section id="servicios" className="py-24 bg-cream px-4 overflow-x-hidden">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <p className="text-brand-green font-bold text-sm tracking-[0.2em] uppercase mb-3">
-            Lo que hacemos
+            Especialidades
           </p>
-          <h2 className="text-4xl md:text-5xl font-black text-anthracite uppercase tracking-tighter leading-none">
-            Servicios <span className="text-brand-green">Integrales</span>
+          <h2 className="text-4xl md:text-6xl font-serif font-black text-anthracite tracking-tight leading-none">
+            Nuestros <span className="text-brand-green italic">Servicios</span>
           </h2>
-          <div className="w-16 h-1 bg-brand-green mx-auto rounded-full mt-6" />
+          <div className="w-20 h-1 bg-brand-green mx-auto mt-6" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {services.map((service, idx) => {
-            const Icon = service.icon;
-            const isFeatured = idx === 0;
+        {/* Servicio Estrella - Layout Premium */}
+        <div className="mb-12 rounded-3xl overflow-hidden shadow-2xl bg-white flex flex-col md:flex-row group border border-slate-100">
+          <div className="w-full md:w-1/2 h-80 md:h-auto relative overflow-hidden">
+            <Image
+              src={featured.image}
+              fill
+              className="object-cover object-center group-hover:scale-105 transition-transform duration-800 ease-out"
+              alt={featured.title}
+            />
+            <div className="absolute inset-0 bg-linear-to-r from-emerald-950/40 to-transparent mix-blend-multiply" />
+            <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm text-brand-green text-xs font-black px-4 py-2 rounded-full uppercase tracking-widest shadow-md">
+              Servicio Estrella
+            </div>
+          </div>
 
+          <div className="w-full md:w-1/2 p-6 sm:p-10 md:p-16 flex flex-col justify-center bg-emerald-950 text-white">
+            <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-8">
+              <featured.icon className="w-8 h-8 text-accent-green" />
+            </div>
+            <h3 className="text-3xl md:text-5xl font-serif font-bold mb-4 tracking-tight">
+              {featured.title}
+            </h3>
+            <p className="text-slate-300 text-base md:text-lg mb-10 leading-relaxed font-light">
+              {featured.desc}
+            </p>
+
+            <div className="mt-auto flex flex-col sm:flex-row items-start sm:items-center gap-6">
+              <Link
+                href={`/servicios/${featured.slug}`}
+                className="bg-accent-green text-emerald-950 font-bold px-8 py-4 rounded-xl hover:bg-white transition-colors duration-300 flex items-center gap-3 w-full sm:w-auto justify-center"
+              >
+                Más información <ArrowRight className="w-5 h-5" />
+              </Link>
+              <div className="flex items-center gap-3 text-sm font-bold text-accent-green uppercase tracking-widest">
+                <div className="w-8 h-px bg-accent-green" />
+                {featured.benefit}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Resto de servicios */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {rest.map((service, idx) => {
+            const Icon = service.icon;
             return (
               <Link
                 key={idx}
                 href={`/servicios/${service.slug}`}
-                className={`group relative p-10 bg-white rounded-2xl transition-all duration-300 overflow-hidden flex flex-col h-full cursor-pointer ${
-                  isFeatured 
-                    ? "md:col-span-2 shadow-xl border-2 border-brand-green hover:-translate-y-1" 
-                    : "shadow-sm border border-transparent hover:border-brand-green/20 hover:shadow-2xl hover:-translate-y-1"
-                }`}
+                className="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-2xl hover:border-brand-green/30 hover:-translate-y-1 transition-all duration-500 cursor-pointer"
               >
-                {/* Background decorator */}
-                <div className={`absolute -top-8 -right-8 w-32 h-32 rounded-full transition-colors duration-300 ${
-                  isFeatured ? 'bg-brand-green/10 group-hover:bg-brand-green/20' : 'bg-brand-green/5 group-hover:bg-brand-green/10'
-                }`} />
-
-                {isFeatured && (
-                  <div className="absolute top-6 right-6 bg-brand-green text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-md">
-                    Servicio Estrella
+                <div className="h-48 relative overflow-hidden">
+                  <Image
+                    src={service.image}
+                    fill
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-800 ease-out"
+                    alt={service.title}
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-emerald-950/80 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
+                  <div className="absolute bottom-4 left-4 flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-white" />
+                    </div>
+                    <h3 className="text-xl font-serif text-white font-bold">{service.title}</h3>
                   </div>
-                )}
+                </div>
 
-                <div className="relative z-10 grow">
-                  <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-colors ${
-                    isFeatured ? 'bg-brand-green text-white' : 'bg-brand-green/10 text-brand-green group-hover:bg-brand-green/20'
-                  }`}>
-                    <Icon className="w-7 h-7" />
-                  </div>
-                  <h3 className={`text-xl font-black mb-3 text-anthracite uppercase tracking-tight transition-colors ${
-                    !isFeatured && 'group-hover:text-brand-green'
-                  }`}>
-                    {service.title}
-                  </h3>
-                  <p className="text-slate-500 leading-relaxed text-sm mb-6 max-w-md">
+                <div className="p-8 grow flex flex-col">
+                  <p className="text-slate-600 leading-relaxed text-sm mb-8">
                     {service.desc}
                   </p>
-                  
-                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-100">
-                    <div className="flex items-center gap-2 text-xs font-bold text-brand-green uppercase tracking-widest">
-                      <div className="w-4 h-0.5 bg-brand-green rounded-full" />
+                  <div className="mt-auto flex items-center justify-between border-t border-slate-100 pt-5">
+                    <span className="text-xs font-bold text-brand-green tracking-widest uppercase">
                       {service.benefit}
+                    </span>
+                    <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-brand-green group-hover:text-white transition-colors text-slate-400">
+                      <ArrowRight className="w-4 h-4" />
                     </div>
-                    <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-brand-green group-hover:translate-x-1 transition-all" />
                   </div>
                 </div>
               </Link>

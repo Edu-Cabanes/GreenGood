@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/layout/Navbar";
@@ -12,27 +12,33 @@ const inter = Inter({
   display: "swap",
 });
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "GreenGood | Paisajismo y Jardinería en Salamanca",
   description:
-    "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca y Castilla y León. Presupuesto en 24h.",
+    "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca y alrededores.",
   keywords: [
     "jardinería Salamanca",
     "césped artificial Salamanca",
-    "mantenimiento jardines Castilla y León",
+    "mantenimiento jardines Salamanca",
     "piscinas comunidades Salamanca",
   ],
   openGraph: {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
-      "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca y Castilla y León.",
+      "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca y alrededores.",
     url: "https://greengood.es",
     siteName: "GreenGood",
     images: [
       {
-        url: "/images/logo.png",
-        width: 800,
-        height: 800,
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
         alt: "GreenGood - Paisajismo y Jardinería en Salamanca",
       },
     ],
@@ -44,7 +50,7 @@ export const metadata: Metadata = {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
       "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca.",
-    images: ["/images/logo.png"],
+    images: ["/images/og-image.png"],
   },
 };
 
@@ -54,8 +60,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`scroll-smooth ${inter.variable}`}>
-      <body className="min-h-screen flex flex-col bg-cream text-anthracite font-sans antialiased">
+    <html lang="es" className={`scroll-smooth ${inter.variable} ${playfair.variable}`}>
+      <body className="min-h-screen flex flex-col bg-cream text-anthracite font-sans antialiased overflow-x-hidden">
         <Navbar />
         <main className="grow">{children}</main>
         <Footer />

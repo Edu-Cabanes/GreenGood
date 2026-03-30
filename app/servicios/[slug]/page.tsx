@@ -8,44 +8,44 @@ const serviciosData = {
     title: "Jardinería General en Salamanca",
     tagline: "Mantenimiento integral experto",
     image: "/images/plantar.jpg",
-    content: "Ofrecemos un servicio de jardinería general adaptado al clima de Castilla y León. Desde abonado estacional hasta podas de limpieza y control de plagas, gestionamos cada aspecto de tu pradera para asegurar un crecimiento sano todo el año.",
-    bulletPoints: ["Podas formativas y de limpieza", "Control fitosanitario integral", "Diseño de sistemas de riego eficientes", "Abonado y resiembra estacional"],
+    content: "Ofrecemos un servicio de jardinería profesional adaptado específicamente al clima de la zona de Salamanca. Gestionamos de forma integral el cuidado de tu jardín para asegurar un crecimiento sano y una estética impecable durante todas las estaciones del año.",
+    bulletPoints: ["Podas especializadas y de formación", "Mantenimiento de praderas y arbustos", "Gestión de sistemas de riego", "Tratamientos preventivos estacionales"],
   },
   "cesped-artificial": {
     title: "Instalador Especializado Césped Artificial",
     tagline: "El verde perfecto los 365 días",
-    image: "/images/cesped-artificial.png",
-    content: "Olvídate de las malas hierbas y el gasto excesivo de agua. Instalamos césped artificial de primera calidad con garantías mecánicas de más de 8 años. Un producto resiliente al duro sol del verano salmantino y a las heladas invernales.",
-    bulletPoints: ["Césped realista con tecnología de recuperación", "Instalación profesional certificada", "Ahorro de hasta un 80% en factura de agua", "Seguro para mascotas y niños"],
+    image: "/images/Instalador Especializado Césped Artificial.png",
+    content: "Disfruta de un jardín verde sin las complicaciones del mantenimiento tradicional. Instalamos modelos de césped artificial de alta gama, diseñados para resistir tanto el sol intenso del verano salmantino como las heladas del invierno.",
+    bulletPoints: ["Césped realista con alta capacidad de recuperación", "Instalación profesional y detallista", "Importante eficiencia en el consumo de agua", "Superficie segura y limpia para toda la familia"],
   },
   "limpieza-comunes": {
     title: "Limpieza de Zonas Comunes",
     tagline: "Entornos impecables para los tuyos",
     image: "/images/Carretilla.jpg",
-    content: "Realizamos limpiezas periódicas y profundas para garajes, pasos de carruajes, piscinas infantiles y recintos comunes de urbanizaciones cerradas. Empleamos maquinaria hidro-limpiadora para liberar de moho y suciedad todos los pavimentos exteriores.",
-    bulletPoints: ["Hidrolimpieza de pavimentos y adoquines", "Vaciado y limpieza de arquetas", "Eliminación de manchas difíciles", "Mantenimiento preventivo mensual"],
+    content: "Realizamos servicios de limpieza profunda en áreas comunes de urbanizaciones y comunidades de vecinos. Nos encargamos de mantener pasos de carruajes, accesos y recintos exteriores libres de suciedad acumulada empleando métodos eficaces de limpieza.",
+    bulletPoints: ["Limpieza técnica de pavimentos y adoquines", "Cuidado de perímetros y cerramientos", "Eliminación de suciedad difícil", "Planes de mantenimiento periódico"],
   },
   "piscinas": {
     title: "Mantenimiento Integral de Piscinas",
-    tagline: "Aguas cristalinas, 100% legales",
-    image: "/images/piscinas.png",
-    content: "Llevamos un control exhaustivo del PH, cloro y salinidad de su piscina comunitaria o privada. Apertura, revisión de maquinaria, cambio de arenas o cristal, rejuntado e invernaje. Todo acorde a la normativa vigente de Sanidad en Castilla y León.",
-    bulletPoints: ["Análisis diario de la calidad del agua", "Rejuntado y limpieza del vaso", "Mantenimiento del cuarto de máquinas", "Servicio integral de invernaje"],
+    tagline: "Aguas cristalinas y seguras",
+    image: "/images/Limpiar piscina.png",
+    content: "Nos encargamos de que tu piscina esté siempre lista para el baño. Realizamos el control de los parámetros del agua y la puesta a punto necesaria para cumplir con los estándares de higiene y seguridad exigidos.",
+    bulletPoints: ["Control y ajuste de los parámetros del agua", "Puesta a punto y revisión pre-temporada", "Limpieza técnica e invernaje", "Mantenimiento preventivo de instalaciones"],
   },
   "servicios-comunidades": {
     title: "Servicios Integrados para Comunidades",
-    tagline: "Un solo proveedor para toda tu finca",
-    image: "/images/pala.jpg",
-    content: "Simplificamos la gestión de las comunidades de vecinos integrando bajo un solo contrato la jardinería, la conserjería básica (limpiezas perimetrales) y el cuidado de la piscina. Transparencia, reportes mensuales y actuación urgente asegurada.",
-    bulletPoints: ["Paquetes con tarifa plana anual", "Contacto directo con el administrador", "Sustituciones en bajas o vacaciones 100% garantizadas", "Servicio urgente 24h para averías de riego"],
+    tagline: "Gestión centralizada para tu finca",
+    image: "/images/Servicios Integrados para Comunidades.png",
+    content: "Simplificamos la conservación de las comunidades de vecinos integrando la jardinería y el cuidado de la piscina bajo una misma gestión. Un servicio profesional que garantiza el buen estado constante de todas las zonas verdes y comunes.",
+    bulletPoints: ["Gestión unificada de zonas exteriores", "Comunicación fluida con la administración", "Planes de actuación eficientes", "Mantenimiento profesional continuo"],
   },
   "urbanizaciones": {
     title: "Proyectos en Urbanizaciones y Residencias",
     tagline: "Cuidado paisajístico a gran escala",
     image: "/images/despues-jardin-cesped-artificial.jpg",
-    content: "Contamos con la maquinaria pesada, plataformas elevadoras y tractores para enfrentarnos a grandes extensiones de terreno, fincas rústicas o recintos residenciales exclusivos. Desbroces masivos, talas controladas y planes de viabilidad a largo plazo.",
-    bulletPoints: ["Desbroces mecanizados de fincas", "Mantenimiento de perimetrales y cortafuegos", "Talas excepcionales y gestión de residuos verdes", "Asesoramiento paisajístico profesional"],
-  }
+    content: "Disponemos de la capacidad técnica necesaria para gestionar grandes extensiones de terreno, recintos residenciales y fincas de gran tamaño. Realizamos labores de desbroce, limpieza y mejora paisajística con resultados profesionales.",
+    bulletPoints: ["Control de vegetación en grandes áreas", "Mantenimiento de zonas perimetrales", "Gestión técnica de residuos vegetales", "Asesoramiento paisajístico a medida"],
+  },
 };
 
 type Props = {
@@ -71,7 +71,7 @@ export default async function ServicioPage({ params }: Props) {
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           Volver a Servicios
         </Link>
-        
+
         <header className="mb-12">
           <p className="text-brand-green font-bold text-sm tracking-[0.2em] uppercase mb-4">
             {data.tagline}
@@ -102,12 +102,12 @@ export default async function ServicioPage({ params }: Props) {
           <p className="text-xl md:text-2xl font-medium text-slate-600 mb-8">
             {data.content}
           </p>
-          
+
           <div className="bg-white rounded-3xl p-8 border border-brand-green/10 shadow-xl overflow-hidden relative">
             {/* Decals geométricos para dar aire técnico */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-brand-green/5 rounded-bl-[100px] pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-anthracite/5 rounded-tr-[80px] pointer-events-none" />
-            
+
             <h3 className="text-xl font-black text-brand-green uppercase tracking-widest mb-6 relative z-10">
               ¿Qué incluye este servicio?
             </h3>

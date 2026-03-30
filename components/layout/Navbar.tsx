@@ -12,9 +12,9 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-brand-green/10">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <div className="relative w-10 h-10">
+          <div className="relative w-9 h-9">
             <Image
-              src="/images/jardineria.png.webp"
+              src="/images/logo.png"
               alt="GreenGood Logo"
               fill
               className="object-contain"
@@ -27,11 +27,10 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider text-anthracite">
-          <Link href="#servicios" className="hover:text-brand-green transition-colors">Servicios</Link>
-          <Link href="#galeria" className="hover:text-brand-green transition-colors">Proyectos</Link>
-          <Link href="#nosotros" className="hover:text-brand-green transition-colors">Nosotros</Link>
+          <Link href="/#servicios" className="hover:text-brand-green transition-colors">Servicios</Link>
+          <Link href="/#nosotros" className="hover:text-brand-green transition-colors">Nosotros</Link>
           <Link 
-            href="#contacto" 
+            href="/#contacto" 
             className="bg-brand-green text-white px-5 py-2 rounded-md hover:bg-opacity-90 transition-all"
           >
             Presupuesto
@@ -47,11 +46,10 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-cream border-t border-brand-green/10 p-4 flex flex-col gap-4 text-center font-bold uppercase">
-          <Link href="#servicios" onClick={() => setIsOpen(false)}>Servicios</Link>
-          <Link href="#galeria" onClick={() => setIsOpen(false)}>Proyectos</Link>
-          <Link href="#nosotros" onClick={() => setIsOpen(false)}>Nosotros</Link>
+          <Link href="/#servicios" onClick={() => setIsOpen(false)}>Servicios</Link>
+          <Link href="/#nosotros" onClick={() => setIsOpen(false)}>Nosotros</Link>
           <Link 
-            href="#contacto" 
+            href="/#contacto" 
             className="bg-brand-green text-white py-3 rounded-md"
             onClick={() => setIsOpen(false)}
           >

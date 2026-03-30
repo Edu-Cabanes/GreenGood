@@ -2,31 +2,31 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    name: "Carlos R.",
-    initial: "C",
-    color: "bg-emerald-500",
-    location: "Salamanca capital",
+    name: "Jesus Marcos",
+    initial: "J",
+    color: "bg-emerald-600",
+    location: "Google Reseñas",
     stars: 5,
-    text: "Instalaron el césped artificial en nuestro jardín en dos días. La calidad es excelente y la limpieza después del trabajo fue impecable. Llevamos ya un año sin preocuparnos del mantenimiento.",
+    text: "El mejor de todos los que han trabajado en mi jardín, honesto, detallista y un gran profesional estoy muy satisfecho con su trabajo. Muy recomendable.",
+    service: "Jardinería",
+  },
+  {
+    name: "Felipe Caminero",
+    initial: "F",
+    color: "bg-slate-800",
+    location: "Google Reseñas",
+    stars: 5,
+    text: "Super atento y rápido. Un trabajo muy bien hecho, en una mañana, todo quedó perfecto. Es muy perfeccionista en lo que hace y cumple lo que promete. Muy recomendable",
     service: "Césped Artificial",
   },
   {
-    name: "María T.",
-    initial: "M",
-    color: "bg-sky-500",
-    location: "Urbanización Santa Marta",
+    name: "Angel Mazas",
+    initial: "A",
+    color: "bg-brand-green",
+    location: "Google Reseñas",
     stars: 5,
-    text: "Gestionan el mantenimiento de toda la comunidad y no podríamos estar más satisfechos. Puntuales, profesionales y siempre disponibles. Los precios son súper competitivos.",
-    service: "Comunidades",
-  },
-  {
-    name: "José A.",
-    initial: "J",
-    color: "bg-amber-500",
-    location: "Peñaranda de Bracamonte",
-    stars: 5,
-    text: "Nos abrieron la piscina para el verano en perfectas condiciones y a tiempo. Muy buena comunicación desde el primer contacto. Totalmente recomendables.",
-    service: "Piscinas",
+    text: "Muchas gracias Contacté con esta empresa por recomendación y la verdad es que fue un gran acierto Muy buenos profesionales, honrados rápidos y eficientes Muy recomendable",
+    service: "Proyecto Integral",
   },
 ];
 
@@ -82,22 +82,19 @@ export default function Testimonials() {
             >
               {/* Header with avatar */}
               <div className="flex items-center gap-4 mb-6">
-                <div className={`w-12 h-12 ${t.color} rounded-full flex items-center justify-center text-white font-black text-lg flex-shrink-0`}>
+                <div className={`w-12 h-12 ${t.color} rounded-full flex items-center justify-center text-white font-black text-lg shrink-0`}>
                   {t.initial}
                 </div>
                 <div>
                   <div className="font-bold text-anthracite text-sm">{t.name}</div>
-                  <div className="text-slate-400 text-xs">{t.location}</div>
+                  <div className="text-slate-500 text-xs">{t.location}</div>
                 </div>
-                <span className="ml-auto bg-brand-green/10 text-brand-green text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider whitespace-nowrap">
-                  {t.service}
-                </span>
               </div>
 
-              <div className="text-brand-green text-5xl font-serif leading-none mb-2 opacity-30 select-none">"</div>
+
               <StarRating count={t.stars} />
-              <p className="text-anthracite leading-relaxed text-sm italic flex-grow">
-                &ldquo;{t.text}&rdquo;
+              <p className="text-anthracite leading-relaxed text-sm italic grow">
+                {t.text}
               </p>
             </div>
           ))}
