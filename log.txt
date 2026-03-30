@@ -1,0 +1,15 @@
+﻿* 918322a feat: project cleanup, professional content refinement and mobile optimizations
+*   65ef563 chore: merge phase 1 into phase 2 branch to keep changes
+|\  
+| * 027d88c feat: refresh contact info using primary WhatsApp approach
+* | adcd253 feat: prioritize Cesped Artificial and add statistics section
+|/  
+* a28643a movil version
+* 90bcb57 feat: cambio logo
+* 798649f feat: version beta
+* 7a6d63e version beta
+* 0961c57 legal
+* 16587c4 fix
+* a21fd77 prototip
+* 5111888 chore: initial project structure with Vite
+* d04fb4e Initial commit

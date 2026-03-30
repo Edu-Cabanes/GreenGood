@@ -28,6 +28,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider text-anthracite">
           <Link href="/#servicios" className="hover:text-brand-green transition-colors">Servicios</Link>
+          <Link href="/#galeria" className="hover:text-brand-green transition-colors">Proyectos</Link>
           <Link href="/#nosotros" className="hover:text-brand-green transition-colors">Nosotros</Link>
           <Link 
             href="/#contacto" 
@@ -47,6 +48,7 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-cream border-t border-brand-green/10 p-4 flex flex-col gap-4 text-center font-bold uppercase">
           <Link href="/#servicios" onClick={() => setIsOpen(false)}>Servicios</Link>
+          <Link href="/#galeria" onClick={() => setIsOpen(false)}>Proyectos</Link>
           <Link href="/#nosotros" onClick={() => setIsOpen(false)}>Nosotros</Link>
           <Link 
             href="/#contacto" 
