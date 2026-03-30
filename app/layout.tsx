@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "GreenGood",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/images/share.PNG",
         width: 1200,
         height: 630,
         alt: "GreenGood - Paisajismo y Jardinería en Salamanca",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
       "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca.",
-    images: ["/images/og-image.png"],
+    images: ["/images/share.PNG"],
   },
 };
 
