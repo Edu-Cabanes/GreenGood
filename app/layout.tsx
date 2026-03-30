@@ -19,6 +19,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://jardineriagreengood.es"),
   title: "GreenGood | Paisajismo y Jardinería en Salamanca",
   description:
     "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca y alrededores.",
@@ -32,11 +33,11 @@ export const metadata: Metadata = {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
       "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca y alrededores.",
-    url: "https://greengood.es",
+    url: "https://jardineriagreengood.es",
     siteName: "GreenGood",
     images: [
       {
-        url: "/images/share.PNG",
+        url: "https://jardineriagreengood.es/images/share.PNG",
         width: 1200,
         height: 630,
         alt: "GreenGood - Paisajismo y Jardinería en Salamanca",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
       "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca.",
-    images: ["/images/share.PNG"],
+    images: ["https://jardineriagreengood.es/images/share.PNG"],
   },
 };
 
