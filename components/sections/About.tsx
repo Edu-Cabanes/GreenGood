@@ -10,7 +10,7 @@ const traits = [
   {
     icon: MapPin,
     title: "Salamanca y alrededores",
-    desc: "Nos desplazamos por toda Salamanca y alrededores sin recargo.",
+    desc: "Nos desplazamos por toda Salamanca y alrededores.",
   },
   {
     icon: Clock,
@@ -70,23 +70,23 @@ export default function About() {
           {/* Imagen en tarjeta visible solo en mobile */}
           <div className="md:hidden mt-8 relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
             <Image
-               src="/images/Servicios Integrados para Comunidades.png"
-               alt="Equipo GreenGood en Salamanca"
-               fill
-               className="object-cover"
+              src="/images/Servicios Integrados para Comunidades.png"
+              alt="Equipo GreenGood en Salamanca"
+              fill
+              className="object-cover"
             />
             {/* Gradiente */}
             <div className="absolute inset-0 bg-linear-to-t from-anthracite/90 via-transparent to-transparent opacity-80" />
 
             {/* Logo oficial superpuesto en la imagen (Mobile) */}
-             <div className="absolute bottom-4 right-4 z-10 w-40 h-14">
-               <Image
-                 src="/images/jardineria.png.webp"
-                 alt="GreenGood Jardinería Logo Oficial"
-                 fill
-                 className="object-contain filter brightness-0 invert drop-shadow-md"
-               />
-             </div>
+            <div className="absolute bottom-4 right-4 z-10 w-40 h-14">
+              <Image
+                src="/images/jardineria.png.webp"
+                alt="GreenGood Jardinería Logo Oficial"
+                fill
+                className="object-contain filter brightness-0 invert drop-shadow-md"
+              />
+            </div>
           </div>
         </div>
 

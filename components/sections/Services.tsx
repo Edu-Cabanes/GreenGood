@@ -85,12 +85,12 @@ export default function Services() {
             <div className="mt-auto flex flex-col sm:flex-row items-start sm:items-center gap-6">
               <Link
                 href={`/servicios/${featured.slug}`}
-                className="bg-accent-green text-emerald-950 font-bold px-8 py-4 rounded-xl hover:bg-white transition-colors duration-300 flex items-center gap-3 w-full sm:w-auto justify-center"
+                className="bg-white text-emerald-950 font-bold shadow-xl shadow-black/20 hover:shadow-2xl hover:bg-cream hover:-translate-y-1 px-8 py-4 rounded-xl transition-all duration-300 flex items-center gap-3 w-full sm:w-auto justify-center"
               >
                 Más información <ArrowRight className="w-5 h-5" />
               </Link>
-              <div className="flex items-center gap-3 text-sm font-bold text-accent-green uppercase tracking-widest">
-                <div className="w-8 h-px bg-accent-green" />
+              <div className="flex items-center gap-3 text-sm font-bold text-white/90 uppercase tracking-widest">
+                <div className="w-8 h-px bg-white/50" />
                 {featured.benefit}
               </div>
             </div>

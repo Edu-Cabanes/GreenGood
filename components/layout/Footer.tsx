@@ -88,7 +88,6 @@ export default function Footer() {
             <div className="flex flex-col gap-3 text-sm">
               <p>Salamanca y alrededores</p>
               <p>Lunes a Viernes: 9:00 - 19:00</p>
-              <a href="mailto:info@jardineriagreengood.es" className="hover:text-white transition-colors">info@jardineriagreengood.es</a>
               <a
                 href="https://wa.me/34615667820"
                 target="_blank"

@@ -121,6 +121,28 @@ export default async function ServicioPage({ params }: Props) {
             </ul>
           </div>
         </article>
+
+        {/* CTA Section */}
+        <div className="mt-16 bg-brand-green rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden">
+          {/* Decoración sutil */}
+          <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <div className="absolute -top-24 -left-24 w-64 h-64 border-8 border-white rounded-full" />
+            <div className="absolute -bottom-32 -right-32 w-80 h-80 border-8 border-white rounded-full" />
+          </div>
+
+          <h3 className="text-2xl md:text-3xl font-black text-white mb-4 uppercase tracking-tighter relative z-10">
+            ¿Listo para dar el paso?
+          </h3>
+          <p className="text-green-100 mb-10 text-lg font-medium max-w-xl mx-auto relative z-10">
+            Presupuesto personalizado en menos de 24 horas. Sin compromiso.
+          </p>
+          <Link
+            href="/#contacto"
+            className="inline-flex items-center gap-3 bg-white text-brand-green font-black px-10 py-5 rounded-2xl hover:bg-cream hover:scale-105 transition-all duration-300 text-sm uppercase tracking-widest shadow-xl relative z-10"
+          >
+            Preguntar por nuestro servicio de puesta a punto
+          </Link>
+        </div>
       </div>
     </main>
   );
