@@ -22,7 +22,7 @@ export default function Contact() {
             Hablemos hoy <br /> mismo
           </h2>
           <p className="text-green-100 text-lg max-w-2xl mx-auto leading-relaxed">
-            Sin esperas ni formularios. Escríbenos directamente o llámanos para contarnos qué necesitas y valoraremos tu proyecto de forma personalizada.
+            Sin esperas ni formularios. Escríbenos directamente o llámanos para contarnos qué necesitas y prepararemos tu presupuesto al instante.
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export default function Contact() {
             </svg>
             615 667 820
           </a>
-          
+
           <a
             href="https://www.instagram.com/jardineriagreengood?igsh=MTEybmY1MWx6ZGwzcQ=="
             target="_blank"
