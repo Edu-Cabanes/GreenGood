@@ -6,6 +6,7 @@ const mainLinks = [
   { label: "Servicios", href: "/#servicios" },
   { label: "Nosotros", href: "/#nosotros" },
   { label: "Blog", href: "/#blog" },
+  { label: "Zonas de Cobertura", href: "/zona-cobertura" },
 ];
 
 const legalLinks = [
@@ -86,7 +87,14 @@ export default function Footer() {
               Contacto
             </h3>
             <div className="flex flex-col gap-3 text-sm">
-              <p>Salamanca y alrededores</p>
+              <a
+                href="https://maps.google.com/?cid=10520740929451458510"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent-green transition-colors"
+              >
+                Salamanca y alrededores
+              </a>
               <p>Lunes a Viernes: 9:00 - 19:00</p>
               <a
                 href="https://wa.me/34615667820"

@@ -63,6 +63,20 @@ export default function Contact() {
             Instagram
           </a>
         </div>
+
+        {/* Google Maps Embed */}
+        <div className="mt-16 w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+          <iframe
+            src="https://maps.google.com/maps?q=Jardineria%20Greengood,%20Salamanca&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full grayscale contrast-125 opacity-90 transition-all duration-500 hover:grayscale-0 hover:opacity-100"
+          ></iframe>
+        </div>
       </div>
     </section>
   );

@@ -93,7 +93,10 @@ export default function RootLayout({
       { '@type': 'City', name: 'Pelabravo' },
       { '@type': 'City', name: 'Aldeatejada' },
     ],
-    sameAs: ['https://jardineriagreengood.es'],
+    sameAs: [
+      'https://jardineriagreengood.es',
+      'https://maps.google.com/?cid=10520740929451458510'
+    ],
   };
   return (
     <html lang="es" className={`scroll-smooth ${inter.variable} ${playfair.variable}`}>
