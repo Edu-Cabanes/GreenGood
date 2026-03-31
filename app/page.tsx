@@ -7,6 +7,11 @@ import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
 import Stats from "@/components/sections/Stats";
 
+export const metadata = {
+  title: "Césped Artificial en Salamanca | GreenGood",
+  description: "Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca y alrededores. Llama ahora al 615 667 820 para tu presupuesto gratis.",
+};
+
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -17,7 +22,7 @@ export default function Home() {
       >
         <div className="absolute inset-0">
           <Image
-            src="/images/rollo de césped artificial.png"
+            src="/images/cesped-artificial-rollo.png"
             alt="Instalación premium de césped artificial"
             fill
             className="object-cover animate-subtle-zoom"
@@ -37,12 +42,12 @@ export default function Home() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-[1.05] tracking-tight">
-              Tu jardín en <br />
-              <span className="text-accent-green italic">buenas manos</span>
+              Instalación de Césped Artificial en <br />
+              <span className="text-accent-green italic">Salamanca</span>
             </h1>
 
             <p className="text-lg md:text-xl text-slate-200 mb-10 font-light leading-relaxed">
-              18 años de experiencia instalando el mejor césped artificial y transformando exteriores. Presupuesto sin compromiso en 24h.
+              <strong className="text-white font-medium">Tu jardín en buenas manos.</strong> 18 años de experiencia instalando el mejor césped artificial y transformando exteriores. Presupuesto sin compromiso en 24h.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import type { Metadata } from "next";
 
 const serviciosData = {
   "jardineria-general": {
@@ -14,28 +15,28 @@ const serviciosData = {
   "cesped-artificial": {
     title: "Instalador Especializado Césped Artificial",
     tagline: "El verde perfecto los 365 días",
-    image: "/images/Instalador Especializado Césped Artificial.png",
+    image: "/images/instalador-cesped-artificial.png",
     content: "Disfruta de un jardín verde sin las complicaciones del mantenimiento tradicional. Instalamos modelos de césped artificial de alta gama, diseñados para resistir tanto el sol intenso del verano salmantino como las heladas del invierno.",
     bulletPoints: ["Césped realista con alta capacidad de recuperación", "Instalación profesional y detallista", "Importante eficiencia en el consumo de agua", "Superficie segura y limpia para toda la familia"],
   },
   "limpieza-comunes": {
     title: "Limpieza de Zonas Comunes",
     tagline: "Entornos impecables para los tuyos",
-    image: "/images/Carretilla.jpg",
+    image: "/images/carretilla.jpg",
     content: "Realizamos servicios de limpieza profunda en áreas comunes de urbanizaciones y comunidades de vecinos. Nos encargamos de mantener pasos de carruajes, accesos y recintos exteriores libres de suciedad acumulada empleando métodos eficaces de limpieza.",
     bulletPoints: ["Limpieza técnica de pavimentos y adoquines", "Cuidado de perímetros y cerramientos", "Eliminación de suciedad difícil", "Planes de mantenimiento periódico"],
   },
   "piscinas": {
     title: "Mantenimiento Integral de Piscinas",
     tagline: "Aguas cristalinas y seguras",
-    image: "/images/Limpiar piscina.png",
+    image: "/images/limpiar-piscina.png",
     content: "Nos encargamos de que tu piscina esté siempre lista para el baño. Realizamos el control de los parámetros del agua y la puesta a punto necesaria para cumplir con los estándares de higiene y seguridad exigidos.",
     bulletPoints: ["Control y ajuste de los parámetros del agua", "Puesta a punto y revisión pre-temporada", "Limpieza técnica e invernaje", "Mantenimiento preventivo de instalaciones"],
   },
   "servicios-comunidades": {
     title: "Servicios Integrados para Comunidades",
     tagline: "Gestión centralizada para tu finca",
-    image: "/images/Servicios Integrados para Comunidades.png",
+    image: "/images/servicios-comunidades.png",
     content: "Simplificamos la conservación de las comunidades de vecinos integrando la jardinería y el cuidado de la piscina bajo una misma gestión. Un servicio profesional que garantiza el buen estado constante de todas las zonas verdes y comunes.",
     bulletPoints: ["Gestión unificada de zonas exteriores", "Comunicación fluida con la administración", "Planes de actuación eficientes", "Mantenimiento profesional continuo"],
   },
@@ -48,10 +49,46 @@ const serviciosData = {
   },
 };
 
+const serviciosMeta: Record<string, { metaTitle: string; metaDescription: string }> = {
+  "jardineria-general": {
+    metaTitle: "Jardinería General en Salamanca",
+    metaDescription: "Servicio profesional de jardinería y mantenimiento de jardines en Salamanca. Podas, riego y tratamientos. Llama al 615 667 820.",
+  },
+  "cesped-artificial": {
+    metaTitle: "Instalación Césped Artificial Salamanca",
+    metaDescription: "Instaladores especializados en césped artificial en Salamanca. Presupuesto sin compromiso en 24h. Llámanos: 615 667 820.",
+  },
+  "limpieza-comunes": {
+    metaTitle: "Limpieza Zonas Comunes Salamanca",
+    metaDescription: "Limpieza profesional de zonas comunes en urbanizaciones y comunidades en Salamanca. Planes de mantenimiento periódico.",
+  },
+  "piscinas": {
+    metaTitle: "Mantenimiento de Piscinas en Salamanca",
+    metaDescription: "Mantenimiento integral de piscinas en Salamanca: control de agua, limpieza técnica e invernaje. Presupuesto gratis.",
+  },
+  "servicios-comunidades": {
+    metaTitle: "Servicios para Comunidades en Salamanca",
+    metaDescription: "Gestión integral de jardinería y piscinas para comunidades de vecinos en Salamanca. Contacta al 615 667 820.",
+  },
+  "urbanizaciones": {
+    metaTitle: "Jardinería para Urbanizaciones en Salamanca",
+    metaDescription: "Mantenimiento paisajístico a gran escala para urbanizaciones y residencias en Salamanca y alrededores.",
+  },
+};
+
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const meta = serviciosMeta[slug];
+  if (!meta) return {};
+  return {
+    title: meta.metaTitle,
+    description: meta.metaDescription,
+  };
+}
 
 // Next.js 15: params se debe resolver antes de usar si se espera de forma asíncrona, 
 // o bien manejar como sync pero en App Router params es devuelto como Promise en layouts/pages dinámicas en ciertas versiones o contextos.

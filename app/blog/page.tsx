@@ -2,26 +2,31 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
+export const metadata = {
+  title: "Consejos de Jardinería en Salamanca | GreenGood",
+  description: "Guías prácticas y consejos de nuestros especialistas en césped artificial y jardinería en Salamanca. Descubre cómo mantener tu jardín perfecto.",
+};
+
 const blogPosts = [
   {
     slug: "mantenimiento-cesped-artificial-guia-completa",
     title: "Mantenimiento del césped artificial: trucos para que dure impecable 15 años",
     category: "Césped Artificial",
-    image: "/images/Instalador Especializado Césped Artificial.png",
+    image: "/images/instalador-cesped-artificial.png",
     excerpt: "Mucha gente cree que no necesita cuidados, pero unos pequeños trucos de profesional harán que tu jardín luzca como el primer día durante mucho más tiempo.",
   },
   {
     slug: "cesped-artificial-vs-natural-verano-salmantino",
     title: "Césped artificial vs césped natural: cuál aguanta mejor el verano salmantino",
     category: "Césped Artificial",
-    image: "/images/rollo de césped artificial.png",
+    image: "/images/cesped-artificial-rollo.png",
     excerpt: "Las temperaturas extremas de la meseta castigan cualquier pradera. Analizamos durabilidad, consumo de agua y mantenimiento real de ambas opciones para que decidas con datos.",
   },
   {
     slug: "poda-setos-arbustos-primavera-errores",
     title: "Poda de setos y arbustos en primavera: errores que destrozan tus plantas",
     category: "Jardinería",
-    image: "/images/Jardieria general.png",
+    image: "/images/jardineria-general.png",
     excerpt: "El corte en el momento equivocado puede matar un arbusto en semanas. Te contamos cuándo podar, qué herramientas usar y cómo dejar cada especie con su forma perfecta.",
   }
 ];

@@ -7,7 +7,7 @@ const blogData = {
   "mantenimiento-cesped-artificial-guia-completa": {
     title: "Mantenimiento del césped artificial: trucos para que dure impecable 15 años",
     category: "Césped Artificial",
-    image: "/images/Instalador Especializado Césped Artificial.png",
+    image: "/images/instalador-cesped-artificial.png",
     intro: "El césped artificial es famoso por su bajo mantenimiento, pero 'bajo' no significa 'cero'. Si quieres que las fibras mantengan su brillo, suavidad y capacidad de recuperación como el primer día, hay una serie de cuidados básicos que debes conocer. Aquí tienes nuestra guía de experto para jardines en Salamanca.",
     sections: [
       {
@@ -36,7 +36,7 @@ const blogData = {
   "cesped-artificial-vs-natural-verano-salmantino": {
     title: "Césped artificial vs césped natural: cuál aguanta mejor el verano salmantino",
     category: "Césped Artificial",
-    image: "/images/rollo de césped artificial.png",
+    image: "/images/cesped-artificial-rollo.png",
     intro: "Salamanca tiene uno de los veranos más duros de la meseta. Semanas con más de 35°C secan cualquier pradera. ¿Qué aguanta mejor: un césped natural o uno artificial? Aquí tienes la respuesta con datos reales de la provincia.",
     sections: [
       {
@@ -65,7 +65,7 @@ const blogData = {
   "poda-setos-arbustos-primavera-errores": {
     title: "Poda de setos y arbustos en primavera: errores que destrozan tus plantas",
     category: "Jardinería",
-    image: "/images/Jardieria general.png",
+    image: "/images/jardineria-general.png",
     intro: "La poda es una de las tareas peor ejecutadas en jardinería doméstica. Un mal corte puede costarle la vida a un arbusto o dejarlo sin flores toda la temporada. Resumimos los errores clásicos en nuestra zona y cómo evitarlos.",
     sections: [
       {

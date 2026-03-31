@@ -70,7 +70,7 @@ export default function About() {
           {/* Imagen en tarjeta visible solo en mobile */}
           <div className="md:hidden mt-8 relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/Servicios Integrados para Comunidades.png"
+              src="/images/servicios-comunidades.png"
               alt="Equipo GreenGood en Salamanca"
               fill
               className="object-cover"
@@ -94,7 +94,7 @@ export default function About() {
         <div className="relative hidden md:block pb-6">
           <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/Servicios Integrados para Comunidades.png"
+              src="/images/servicios-comunidades.png"
               alt="Equipo GreenGood en Salamanca"
               fill
               className="object-cover"

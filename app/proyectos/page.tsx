@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Proyectos Realizados | GreenGood",
-  description: "Galería de trabajos de jardinería, césped artificial y mantenimiento en Salamanca.",
+  title: "Proyectos de Jardinería y Césped Artificial en Salamanca",
+  description: "Galería de trabajos realizados: césped artificial, mantenimiento de jardines y piscinas en Salamanca y alrededores. Más de 1.500 proyectos.",
 };
 
 const proyectos = [

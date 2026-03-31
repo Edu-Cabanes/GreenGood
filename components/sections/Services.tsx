@@ -11,7 +11,7 @@ const services = [
     title: "Césped Artificial",
     desc: "Venta e instalación con materiales de alta gama certificados. Diseñamos espacios duraderos, suaves al tacto y siempre perfectos, sin necesidad de riego ni siega.",
     benefit: "Sin mantenimiento diario",
-    image: "/images/rollo de césped artificial.png",
+    image: "/images/cesped-artificial-rollo.png",
   },
   {
     icon: Trees,
@@ -19,7 +19,7 @@ const services = [
     title: "Jardinería General",
     desc: "Mantenimiento integral de praderas, podas especializadas, control de plagas, abonado profesional y diseño paisajístico.",
     benefit: "Jardines siempre impecables",
-    image: "/images/Jardieria general.png",
+    image: "/images/jardineria-general.png",
   },
   {
     icon: Waves,
@@ -27,7 +27,7 @@ const services = [
     title: "Mantenimiento de Piscinas",
     desc: "Limpieza profunda, análisis de aguas biológico y puesta a punto integral de instalaciones para disfrutar sin preocupaciones.",
     benefit: "Aguas cristalinas óptimas",
-    image: "/images/Mantenimiento de piscina.png",
+    image: "/images/mantenimiento-piscina.png",
   },
   {
     icon: Users,
@@ -35,7 +35,7 @@ const services = [
     title: "Servicios a Comunidades",
     desc: "Conservación de grandes áreas. Unificamos cuidado de jardines, piscinas y limpieza viaria en un solo servicio unificado y fiable.",
     benefit: "Comodidad sin intermediarios",
-    image: "/images/Servicios para Comunidades y Grandes Áreas.png",
+    image: "/images/servicios-grandes-areas.png",
   },
 ];
 
