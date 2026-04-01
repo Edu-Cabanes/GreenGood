@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
       "Especialistas en césped artificial, mantenimiento integral y piscinas. Contacta al 615 667 820 para tu presupuesto.",
-    url: "https://jardineriagreengood.es",
+    url: "/",
     siteName: "GreenGood",
     images: [
       {
-        url: "https://jardineriagreengood.es/images/greengood-jardineria-salamanca.png",
+        url: "/images/greengood-jardineria-salamanca.png",
         width: 1200,
         height: 630,
         alt: "GreenGood - Paisajismo y Jardinería en Salamanca",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
       "Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca.",
-    images: ["https://jardineriagreengood.es/images/greengood-jardineria-salamanca.png"],
+    images: ["/images/greengood-jardineria-salamanca.png"],
   },
 };
 
