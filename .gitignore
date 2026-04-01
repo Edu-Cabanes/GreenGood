@@ -1,6 +1,11 @@
 node_modules
 dist
 .env
+.env.*
 .DS_Store
 *.local
 .next
+.agents
+.vscode
+*.tsbuildinfo
+pnpm-lock.yaml
