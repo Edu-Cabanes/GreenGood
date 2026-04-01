@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://jardineriagreengood.es',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://greengood-nu.vercel.app',
   generateRobotsTxt: true,
   sitemapSize: 7000,
   exclude: ['/server-sitemap.xml', '/404'],
@@ -46,9 +46,5 @@ module.exports = {
 
     return paths;
   },
-  robotsTxtOptions: {
-    additionalSitemaps: [
-      'https://jardineriagreengood.es/sitemap.xml',
-    ],
-  },
+  robotsTxtOptions: {},
 };
