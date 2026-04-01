@@ -73,6 +73,7 @@ export default function About() {
               src="/images/servicios-comunidades.png"
               alt="Equipo GreenGood en Salamanca"
               fill
+              sizes="100vw"
               className="object-cover"
             />
             {/* Gradiente */}
@@ -81,9 +82,10 @@ export default function About() {
             {/* Logo oficial superpuesto en la imagen (Mobile) */}
             <div className="absolute bottom-4 right-4 z-10 w-40 h-14">
               <Image
-                src="/images/jardineria.png.webp"
+                src="/images/equipo-jardineria-greengood.webp"
                 alt="GreenGood Jardinería Logo Oficial"
                 fill
+                sizes="160px"
                 className="object-contain filter brightness-0 invert drop-shadow-md"
               />
             </div>
@@ -97,6 +99,7 @@ export default function About() {
               src="/images/servicios-comunidades.png"
               alt="Equipo GreenGood en Salamanca"
               fill
+              sizes="(max-width: 768px) 0px, 50vw"
               className="object-cover"
             />
             {/* Gradientes para asentar el logo */}
@@ -106,9 +109,10 @@ export default function About() {
             {/* Logo oficial superpuesto en la imagen */}
             <div className="absolute bottom-8 right-8 z-10 w-48 h-16">
               <Image
-                src="/images/jardineria.png.webp"
+                src="/images/equipo-jardineria-greengood.webp"
                 alt="GreenGood Jardinería Logo Oficial"
                 fill
+                sizes="192px"
                 className="object-contain filter brightness-0 invert drop-shadow-2xl"
               />
             </div>

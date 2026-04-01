@@ -44,9 +44,9 @@ function StarRating({ count }: { count: number }) {
 
 export default function Testimonials() {
   return (
-    <section className="py-28 bg-white px-4">
+    <section className="py-16 md:py-28 bg-white px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <p className="text-brand-green font-bold text-sm tracking-[0.2em] uppercase mb-3">
             Lo que dicen nuestros clientes
           </p>

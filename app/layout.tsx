@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://greengood-nu.vercel.app"),
+  metadataBase: new URL("https://jardineriagreengood.es"),
   title: {
     default: "GreenGood | Paisajismo y Jardinería en Salamanca",
     template: "%s | GreenGood",
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
       "Especialistas en césped artificial, mantenimiento integral y piscinas. Contacta al 615 667 820 para tu presupuesto.",
-    url: "https://greengood-nu.vercel.app",
+    url: "https://jardineriagreengood.es",
     siteName: "GreenGood",
     images: [
       {
-        url: "https://greengood-nu.vercel.app/images/share.PNG",
+        url: "https://jardineriagreengood.es/images/greengood-jardineria-salamanca.png",
         width: 1200,
         height: 630,
         alt: "GreenGood - Paisajismo y Jardinería en Salamanca",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
       "Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca.",
-    images: ["https://greengood-nu.vercel.app/images/share.PNG"],
+    images: ["https://jardineriagreengood.es/images/greengood-jardineria-salamanca.png"],
   },
 };
 
@@ -67,7 +67,7 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'LandscapingBusiness',
     name: 'GreenGood',
-    image: 'https://jardineriagreengood.es/images/share.PNG',
+    image: 'https://jardineriagreengood.es/images/greengood-jardineria-salamanca.png',
     '@id': 'https://jardineriagreengood.es',
     url: 'https://jardineriagreengood.es',
     telephone: '+34615667820',
@@ -100,13 +100,11 @@ export default function RootLayout({
   };
   return (
     <html lang="es" className={`scroll-smooth ${inter.variable} ${playfair.variable}`}>
-      <head>
+      <body className="min-h-screen flex flex-col bg-cream text-anthracite font-sans antialiased overflow-x-hidden">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-      </head>
-      <body className="min-h-screen flex flex-col bg-cream text-anthracite font-sans antialiased overflow-x-hidden">
         <Navbar />
         <main className="grow">{children}</main>
         <Footer />

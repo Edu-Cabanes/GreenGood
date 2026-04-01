@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Accesibilidad",
   description: "Declaración de accesibilidad web de Jardinería GreenGood conforme al RD 1112/2018 y WCAG 2.1.",
+  robots: { index: false, follow: true },
 };
 
 export default function Accesibilidad() {

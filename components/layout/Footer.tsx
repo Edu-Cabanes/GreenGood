@@ -31,6 +31,7 @@ export default function Footer() {
                   src="/images/logo.png"
                   alt="GreenGood Logo"
                   fill
+                  sizes="40px"
                   className="object-contain filter brightness-0 invert"
                 />
               </div>
@@ -97,7 +98,7 @@ export default function Footer() {
               </a>
               <p>Lunes a Viernes: 9:00 - 19:00</p>
               <a
-                href="https://wa.me/34615667820"
+                href="https://wa.me/34615667820?text=Hola!%20Vengo%20de%20la%20web%20y%20me%20gustar%C3%ADa%20haceros%20una%20consulta."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-white hover:text-accent-green transition-colors font-bold mt-2"

@@ -7,13 +7,13 @@ import type { Metadata } from "next";
 const serviciosData = {
   "jardineria-general": {
     title: "Jardinería General en Salamanca",
-    tagline: "Mantenimiento integral experto para tu hogar",
-    image: "/images/plantar.jpg",
-    content: "Ofrecemos un servicio de jardinería profesional adaptado específicamente al clima de la zona de Salamanca. Gestionamos de forma integral el cuidado de tu jardín para asegurar un crecimiento sano y una estética impecable durante todas las estaciones del año.",
+    tagline: "Cuidamos tu jardín para que tú solo lo disfrutes",
+    image: "/images/jardinero-plantando-salamanca.jpg",
+    content: "Damos un servicio de jardinería profesional pensado para el clima de Salamanca. Nos encargamos de todo el mantenimiento para que tu jardín esté sano y con buen aspecto durante todo el año.",
     longContent: [
       {
-        heading: "El reto de la jardinería en Salamanca",
-        body: "El clima continental de Salamanca, con sus veranos secos y calurosos, y sus inviernos con fuertes heladas, supone un auténtico desafío para cualquier zona verde. No vale cualquier planta ni cualquier tipo de abono. Nuestro equipo conoce a la perfección las especies que mejor se adaptan a la meseta y los tiempos exactos para podar, sembrar y abonar."
+        heading: "El clima de Salamanca y tu jardín",
+        body: "El clima de aquí, con veranos muy secos e inviernos de heladas fuertes, es un reto para las zonas verdes. No sirve cualquier planta ni cualquier abono. Conocemos las especies que mejor aguantan en la meseta y los momentos exactos para podar o sembrar."
       },
       {
         heading: "Mantenimiento a medida",
@@ -26,7 +26,7 @@ const serviciosData = {
     ],
     bulletPoints: ["Podas especializadas y de formación", "Mantenimiento de praderas y arbustos", "Gestión de sistemas de riego", "Tratamientos preventivos estacionales"],
     faqs: [
-      { q: "¿Cada cuánto tiempo debéis venir a mantener el jardín?", a: "Depende del diseño y las especies. Para un jardín estándar con césped natural, recomendamos visitas semanales o quincenales en verano, y visitas mensuales de mantenimiento en invierno." },
+      { q: "¿Cada cuánto tiempo debéis venir a mantener el jardín?", a: "Depende directamente del diseño, las especies elegidas y la temporada del año. Lo mejor es que nos preguntes y estudiaremos tu caso para resolver cualquier duda." },
       { q: "¿Usáis productos perjudiciales para mis mascotas?", a: "No. Empleamos productos fitosanitarios homologados y siempre que es posible optamos por soluciones ecológicas completamente seguras para perros y gatos." }
     ]
   },
@@ -37,12 +37,12 @@ const serviciosData = {
     content: "Disfruta de un jardín verde sin las complicaciones del mantenimiento tradicional. Instalamos modelos de césped artificial de alta gama, diseñados para resistir tanto el sol intenso del verano salmantino como las heladas del invierno.",
     longContent: [
       {
-        heading: "La solución definitiva para tu jardín o terraza",
-        body: "El cambio climático y las sequías recurrentes han convertido al césped artificial en la opción más inteligente para Salamanca. Atrás quedaron las alfombras plásticas y ásperas; hoy trabajamos con monofilamentos avanzados que imitan a la perfección la textura, el color y la resiliencia del césped natural, con hilos rizados en la base que le dan volumen y naturalidad."
+        heading: "Césped perfecto para el clima de aquí",
+        body: "Con los veranos tan secos que tenemos en Salamanca, el césped artificial es la opción más práctica. Los modelos actuales no tienen nada que ver con las alfombras plásticas de antes. Ahora trabajamos con materiales que imitan muy bien la textura y el color de la hierba real, aguantan el uso y tienen un aspecto muy natural."
       },
       {
-        heading: "Ahorro drástico en agua y mantenimiento",
-        body: "Una de las ventajas más tangibles es el ahorro económico a medio plazo. Olvídate de programar el riego diario, encender el cortacésped el domingo por la mañana o comprar abonos. La factura del agua se reduce drásticamente, amortizando la inversión original en apenas unos años. Es una solución ideal tanto para chalets unifamiliares como para azoteas, áticos o los bordes de la piscina."
+        heading: "Ahorro real en agua y tiempo",
+        body: "Lo mejor es que te olvidas de regar a diario y de pasar el cortacésped los fines de semana. La factura del agua baja mucho y amortizas la instalación en poco tiempo. Es la solución ideal para chalets, terrazas o para el borde de la piscina."
       },
       {
         heading: "Nuestro proceso de instalación paso a paso",
@@ -51,24 +51,24 @@ const serviciosData = {
     ],
     bulletPoints: ["Césped de última generación y máxima naturalidad", "Preparación técnica del terreno y drenaje experto", "Sellado de juntas completamente invisible", "Superficie 100% segura para niños y mascotas"],
     faqs: [
-      { q: "¿Se calienta mucho en los días de verano?", a: "Es cierto que retiene más temperatura que la hierba natural cuando le da el sol directo a 40 grados. La mejor forma de solucionarlo en las horas centrales del calor salmantino es darle un manguerazo muy breve; el agua evapora y refresca de golpe toda la zona para poder pisarlo descalzo." },
+      { q: "¿Se calienta mucho en verano?", a: "Es cierto que retiene más calor que la hierba natural cuando le da el sol directo a 40 grados. Si quieres refrescarlo, basta con darle un manguerazo rápido. El agua se evapora y baja la temperatura de golpe para que puedas pisarlo descalzo." },
       { q: "¿Es necesario algún tipo de mantenimiento?", a: "El mantenimiento es mínimo. Basta con cepillarlo a contrapelo un par de veces al año para levantar las fibras en las zonas de más pisada, y mojarlo si quieres limpiarlo de polvo. Nosotros también ofrecemos servicios de puesta a punto si prefieres despreocuparte." },
-      { q: "¿Drena bien si llueve mucho?", a: "Sí, todos nuestros modelos cuentan con orificios de drenaje en el backing (la base), capaces de evacuar hasta 60 litros por metro cuadrado al minuto. Además, la capa de grava y arena que preparamos debajo actúa como sumidero natural." }
+      { q: "¿Drena bien si llueve mucho?", a: "Sí, todos nuestros modelos cuentan con orificios de drenaje en el backing (la base), capaces de evacuar grandes cantidades de agua. Además, la capa de grava y arena que preparamos debajo actúa como sumidero natural." }
     ]
   },
   "limpieza-comunes": {
     title: "Limpieza de Zonas Comunes y Accesos",
     tagline: "Entornos impecables, vecinos contentos",
-    image: "/images/carretilla.jpg",
+    image: "/images/limpieza-zonas-comunes-greengood.jpg",
     content: "Realizamos servicios de limpieza profunda en áreas comunes de urbanizaciones y comunidades de vecinos. Nos encargamos de mantener pasos de carruajes, accesos y recintos exteriores libres de suciedad acumulada empleando métodos eficaces de limpieza.",
     longContent: [
       {
-        heading: "La primera impresión cuenta",
-        body: "Los accesos peatonales, rampas de garaje, portales exteriores y caminos adoquinados son la carta de presentación de cualquier comunidad. Sin embargo, con el polvo en suspensión, las lluvias escasas y el paso constante, acumulan mucha suciedad y manchas difíciles que una simple escoba no puede solucionar."
+        heading: "Limpieza profesional de accesos",
+        body: "Las rampas de garaje, portales y caminos exteriores son lo primero que se ve de una comunidad. Con el tiempo acumulan polvo y manchas que no salen barriendo. Usamos máquinas a presión para dejar los suelos limpios y sin rastro de suciedad o moho."
       },
       {
-        heading: "Intervenciones técnicas y eficaces",
-        body: "Empleamos hidrolimpiadoras industriales y maquinaria específica para arrancar musgo, incrustaciones y manchas orgánicas en pavimentos porosos. Trabajamos de forma rápida y con las mínimas molestias para el tránsito diario de los propietarios."
+        heading: "Rápido y sin molestias",
+        body: "Trabajamos con maquinaria profesional para eliminar manchas en pavimentos porosos. Lo hacemos de forma rápida para molestar lo mínimo a los vecinos."
       },
       {
         heading: "Planes a tu medida",
@@ -84,19 +84,19 @@ const serviciosData = {
     title: "Mantenimiento Integral de Piscinas",
     tagline: "Aguas cristalinas, baños seguros",
     image: "/images/limpiar-piscina.png",
-    content: "Nos encargamos de que tu piscina esté siempre lista para el baño. Realizamos el control de los parámetros del agua y la puesta a punto necesaria para cumplir con los estándares de higiene y seguridad exigidos por normativa.",
+    content: "Nos encargamos de que tu piscina esté siempre lista para el baño. Realizamos el control de parámetros y la puesta a punto necesaria para cumplir con los estándares de higiene.",
     longContent: [
       {
-        heading: "Puesta a punto pre-temporada",
-        body: "La apertura de la piscina tras los largos inviernos de Salamanca requiere precisión técnica. Retiramos y limpiamos las lonas de invernaje, desinfectamos exhaustivamente el vaso (paredes y fondo), revisamos el estado de los filtros (cambios de arena de sílice o vidrio), las bombas y válvulas, y realizamos el tratamiento de choque inicial para que el agua recupere su pureza original."
+        heading: "Puesta a punto al empezar la temporada",
+        body: "Abrir la piscina después del invierno en Salamanca requiere su proceso. Limpiamos las lonas, desinfectamos el vaso, revisamos filtros y bombas, y hacemos el tratamiento inicial para que el agua esté perfecta desde el primer día."
       },
       {
-        heading: "Control riguroso en temporada",
-        body: "Una piscina es mucho más que agua clorada. El equilibrio químico es vital para evitar irritaciones en los ojos, piel seca, y prevenir aguas turbias o problemas de algas. Realizamos mediciones constantes de pH, cloro libre, turbidez y alcalinidad, ajustando los niveles de forma analítica en cada visita programada."
+        heading: "Agua siempre limpia",
+        body: "Mantener el agua equilibrada es clave para evitar problemas en la piel o que se ponga turbia. Hacemos mediciones constantes de pH y cloro, ajustando los niveles en cada visita."
       },
       {
-        heading: "Invernaje y reducción de costes",
-        body: "Cuando llega el frío, preparamos tu instalación para que sobreviva el invierno sin daños estructurales por congelación en las tuberías y para que no tengas que vaciar todos los litros de agua cada año. El invernaje es la decisión técnica más ecológica y la que más dinero te ahorrará a largo plazo."
+        heading: "Invernaje para ahorrar",
+        body: "Cuando termina el verano, dejamos todo listo para que la instalación no sufra con las heladas. No hace falta vaciar la piscina cada año si se hace un buen invernaje, lo que ahorra mucho dinero."
       }
     ],
     bulletPoints: ["Revisión técnica de la sala de máquinas", "Tratamientos de choque y recuperación de aguas turbias", "Controles químicos semanales en temporada", "Operaciones técnicas de invernaje"],
@@ -109,19 +109,19 @@ const serviciosData = {
     title: "Servicios Integrados para Comunidades",
     tagline: "Un único proveedor, tranquilidad total",
     image: "/images/servicios-comunidades.png",
-    content: "Simplificamos la conservación de las comunidades de vecinos integrando la jardinería y el cuidado de la piscina bajo una misma gestión unificada. Un servicio profesional que reduce costes y garantiza el buen estado constante de las zonas comunes.",
+    content: "Simplificamos la gestión de tu comunidad unificando la jardinería y el cuidado de la piscina. Un servicio profesional que ahorra costes y asegura el buen estado de las zonas comunes.",
     longContent: [
       {
-        heading: "El problema de tener múltiples empresas",
-        body: "A menudo, las grandes comunidades contratan a una empresa para mantener la piscina, a otra para recortar los setos y a otra para limpiar accesos. Esto genera problemas constantes de coordinación, solapamientos de tareas y demasiados dolores de cabeza para presidentes y administradores de fincas. Nosotros solucionamos esto asumiendo el control de todo el exterior."
+        heading: "Un solo contacto para todo",
+        body: "A veces las comunidades tienen una empresa para la piscina, otra para los setos y otra para la limpieza. Eso suele dar líos de coordinación. Nosotros nos encargamos de todo el exterior para que el administrador y el presidente no tengan que preocuparse de nada."
       },
       {
-        heading: "Equipos multidisciplinares de confianza",
-        body: "Al asignar un equipo fijo a tu comunidad o mancomunidad, los vecinos siempre saben quién entra por la puerta. Nuestro personal realiza rutas de supervisión exhaustivas: si mientras limpian perciben que un difusor de riego tira agua fuera, lo corrigen en el acto; si ven el nivel del agua de la piscina bajo, lo regulan."
+        heading: "Equipo de confianza",
+        body: "Asignamos al mismo equipo a la comunidad para que los vecinos ya los conozcan. Revisamos todo en cada visita: si vemos un aspersor que riega fuera o que falta agua en la piscina, lo arreglamos sobre la marcha."
       },
       {
-        heading: "Reportes claros y ahorros reales",
-        body: "Mantenemos un contacto directo y fluido con los gestores de la finca, informando proactivamente de las labores realizadas. Al agrupar servicios, podemos ofrecer presupuestos anuales mucho más ajustados y competitivos que contratando los mismos servicios de forma individualizada."
+        heading: "Presupuestos claros",
+        body: "Estamos en contacto con el administrador para informar de todo lo que se hace. Al llevar nosotros todo el mantenimiento, podemos ajustar más el precio que si se contratan los servicios por separado."
       }
     ],
     bulletPoints: ["Gestión centralizada de piscina, limpieza y jardines", "Personal operativo fijo asignado a tu comunidad", "Ahorro al contratar un pack de servicios unificado", "Reportes regulares al administrador de fincas"],
@@ -132,26 +132,26 @@ const serviciosData = {
   "urbanizaciones": {
     title: "Proyectos en Urbanizaciones y Fincas",
     tagline: "Capacidad operativa para grandes superficies",
-    image: "/images/despues-jardin-cesped-artificial.jpg",
-    content: "Disponemos de la capacidad técnica necesaria para gestionar grandes extensiones de terreno, amplios recintos residenciales y fincas rústicas. Realizamos labores de desbroce, limpieza y mejora paisajística a gran escala con resultados profesionales.",
+    image: "/images/urbanizaciones-maquinaria.png",
+    content: "Tenemos la maquinaria y el equipo necesarios para encargarnos de grandes extensiones, recintos residenciales y fincas rústicas. Hacemos desbroces, limpieza y mejora del paisaje con resultados profesionales.",
     longContent: [
       {
-        heading: "Mantenimiento de grandes extensiones",
-        body: "Mantener una urbanización extensa en los alrededores de Salamanca, con sus largas avenidas, paseos interiores y rotondas, exige mucho más que un cortacésped. Abordamos la gestión de espacios que van más allá del jardín privado, controlando el crecimiento descontrolado de la hierba y manteniendo expeditas las arterias principales de la comunidad."
+        heading: "Limpieza de parcelas y fincas",
+        body: "Mantener una urbanización o una finca grande en los alrededores de Salamanca exige tiempo y maquinaria. Nos encargamos de las zonas comunes, avenidas y parcelas privadas para controlar el crecimiento de la hierba y que todo esté en orden."
       },
       {
-        heading: "Desbroce perimetral y cortafuegos",
-        body: "Durante la corta pero intensa primavera, las parcelas vacías y los linderos de las urbanizaciones crecen desproporcionadamente. Cuando este pasto se seca en verano, supone un inmenso riesgo de incendio. Realizamos desbroces de seguridad con maquinaria pesada y manual, eliminando pasto y zarzas para garantizar zonas limpias que cumplan con las ordenanzas de los ayuntamientos de la provincia."
+        heading: "Desbroces de seguridad",
+        body: "En primavera la hierba crece muy rápido en las parcelas vacías. Cuando llega el calor, ese pasto seco es un peligro por el riesgo de incendio. Hacemos desbroces con maquinaria profesional para dejar las zonas limpias y cumplir con la normativa municipal."
       },
       {
-        heading: "Gestión ambiental de residuos vegetales",
-        body: "En estas áreas tan grandes la generación de matorral, poda y biomasa es enorme. Nosotros nos ocupamos de procesar ese volumen: realizamos astillados in situ o gestionamos directamente la carga y traslado de todos los residuos vegetales generados hacia los puntos limpios y plantas de tratamiento homologadas."
+        heading: "Gestión de restos vegetales",
+        body: "Al limpiar zonas tan grandes sale mucho matorral y restos de poda. Nosotros nos ocupamos de todo el volumen de residuos. Los procesamos o los llevamos directamente a la planta de tratamiento correspondiente."
       }
     ],
     bulletPoints: ["Desbroces preventivos de seguridad en grandes parcelas", "Cuidado de paseos peatonales y áreas de esparcimiento", "Maquinaria de gran rendimiento para agilizar el trabajo", "Carga, porte y gestión responsable de residuos orgánicos"],
     faqs: [
-      { q: "¿Realizáis intervenciones de choque en parcelas abandonadas?", a: "Absolutamente sí. Disponemos de cuadrillas equipadas con desbrozadoras profesionales y motosierras para recuperar y adecentar terrenos o casas de campo que llevan años sin recibir mantenimiento." },
-      { q: "¿Retiráis vosotros los restos vegetales después del desbroce?", a: "Sí, todos nuestros presupuestos de intervención incluyen la retirada de las toneladas de biomasa generadas y su posterior depósito en vertederos especiales." }
+      { q: "¿Realizáis intervenciones de choque en parcelas abandonadas?", a: "Sí. Tenemos desbrozadoras profesionales y motosierras para recuperar terrenos o casas de campo que llevan años sin mantenimiento." },
+      { q: "¿Retiráis vosotros los restos vegetales después del desbroce?", a: "Sí, nuestros presupuestos ya incluyen la retirada de toda la maleza y restos generados para llevarlos al punto limpio o planta de tratamiento." }
     ]
   },
 };
@@ -163,7 +163,7 @@ const serviciosMeta: Record<string, { metaTitle: string; metaDescription: string
   },
   "cesped-artificial": {
     metaTitle: "Instalación Césped Artificial Salamanca",
-    metaDescription: "Instaladores especializados en césped artificial en Salamanca. Presupuesto sin compromiso en 24h. Llámanos: 615 667 820.",
+    metaDescription: "Instaladores especializados en césped artificial en Salamanca. Presupuesto rápido y sin compromiso. Llámanos: 615 667 820.",
   },
   "limpieza-comunes": {
     metaTitle: "Limpieza Zonas Comunes Salamanca",
@@ -208,6 +208,25 @@ export default async function ServicioPage({ params }: Props) {
 
   return (
     <main className="bg-cream min-h-screen pt-24 pb-16">
+      {data.faqs && data.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: data.faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: faq.a,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
       <div className="max-w-4xl mx-auto px-4">
         <Link href="/#servicios" className="inline-flex items-center gap-2 text-brand-green font-bold text-sm tracking-widest uppercase hover:opacity-70 transition-opacity mb-8 group">
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
@@ -220,9 +239,7 @@ export default async function ServicioPage({ params }: Props) {
             {data.tagline}
           </p>
           <h1 className="text-4xl md:text-6xl font-black text-anthracite uppercase tracking-tighter leading-none mb-8">
-            {data.title.split(' ').map((word, i) => (
-              i % 2 !== 0 ? <span key={i} className="text-brand-green"> {word} </span> : <span key={i}>{word} </span>
-            ))}
+            {data.title}
           </h1>
           <div className="w-24 h-2 bg-brand-green rounded-full mb-10" />
           
@@ -231,6 +248,7 @@ export default async function ServicioPage({ params }: Props) {
               src={data.image}
               alt={data.title}
               fill
+              sizes="(max-width: 768px) 100vw, 896px"
               className="object-cover"
               priority
             />
@@ -259,7 +277,7 @@ export default async function ServicioPage({ params }: Props) {
           </div>
 
           {/* Features / Bullet Points */}
-          <div className="bg-auth-gradient-bg bg-anthracite rounded-3xl p-8 md:p-12 shadow-xl overflow-hidden relative mb-16">
+          <div className="bg-anthracite rounded-3xl p-8 md:p-12 shadow-xl overflow-hidden relative mb-16">
             <h3 className="text-2xl font-black text-white uppercase tracking-widest mb-8 relative z-10">
               ¿Qué incluimos?
             </h3>
@@ -302,15 +320,18 @@ export default async function ServicioPage({ params }: Props) {
             ¿Hablamos sobre tu parcela?
           </h3>
           <p className="text-green-100 mb-10 text-xl max-w-2xl mx-auto relative z-10">
-            Presupuesto personalizado en menos de 24 horas. Envíanos un WhatsApp o llámanos hoy mismo sin compromiso.
+            Presupuesto rápido y personalizado. Envíanos un WhatsApp o llámanos hoy mismo sin compromiso.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 relative z-10">
             <a
-              href="https://wa.me/34615667820"
+              href={`https://wa.me/34615667820?text=Hola!%20Me%20interesa%20el%20servicio%20de%20${encodeURIComponent(data.title)}.%20%C2%BFMe%20pod%C3%A9is%20dar%20m%C3%A1s%20informaci%C3%B3n?`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-white text-brand-green font-black px-10 py-5 rounded-2xl hover:bg-cream hover:scale-105 transition-all duration-300 text-sm uppercase tracking-widest shadow-xl"
             >
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
               Pedir Presupuesto
             </a>
             <a

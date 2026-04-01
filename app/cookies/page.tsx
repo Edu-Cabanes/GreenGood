@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Política de Cookies",
   description: "Política de Cookies de Jardinería GreenGood. Información sobre el uso de cookies en nuestro sitio web.",
+  robots: { index: false, follow: true },
 };
 
 export default function PoliticaCookies() {

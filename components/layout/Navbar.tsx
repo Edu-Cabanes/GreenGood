@@ -17,6 +17,7 @@ export default function Navbar() {
               src="/images/logo.png"
               alt="GreenGood Logo"
               fill
+              sizes="36px"
               className="object-contain"
             />
           </div>
@@ -29,12 +30,14 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider text-anthracite">
           <Link href="/#servicios" className="hover:text-brand-green transition-colors">Servicios</Link>
           <Link href="/#nosotros" className="hover:text-brand-green transition-colors">Nosotros</Link>
-          <Link 
-            href="/#contacto" 
+          <a 
+            href="https://wa.me/34615667820?text=Hola!%20Me%20gustar%C3%ADa%20solicitar%20un%20presupuesto%20sin%20compromiso%20para%20mi%20jard%C3%ADn."
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-brand-green text-white px-5 py-2 rounded-md hover:bg-opacity-90 transition-all"
           >
             Presupuesto
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -48,13 +51,15 @@ export default function Navbar() {
         <div className="md:hidden bg-cream border-t border-brand-green/10 p-4 flex flex-col gap-4 text-center font-bold uppercase">
           <Link href="/#servicios" onClick={() => setIsOpen(false)}>Servicios</Link>
           <Link href="/#nosotros" onClick={() => setIsOpen(false)}>Nosotros</Link>
-          <Link 
-            href="/#contacto" 
+          <a 
+            href="https://wa.me/34615667820?text=Hola!%20Me%20gustar%C3%ADa%20solicitar%20un%20presupuesto%20sin%20compromiso%20para%20mi%20jard%C3%ADn."
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-brand-green text-white py-3 rounded-md"
             onClick={() => setIsOpen(false)}
           >
             SOLICITAR PRESUPUESTO
-          </Link>
+          </a>
         </div>
       )}
     </nav>
