@@ -15,6 +15,10 @@
   body {
     @apply bg-cream text-anthracite antialiased;
   }
+  .font-serif {
+    font-variant-ligatures: none !important;
+    font-feature-settings: "liga" 0, "clig" 0, "calt" 0, "dlig" 0 !important;
+  }
 }
 
 @keyframes subtle-zoom {
@@ -24,4 +28,11 @@
 
 .animate-subtle-zoom {
   animation: subtle-zoom 20s ease-in-out infinite alternate;
+}
+
+/* Solución para ligaduras y kerning en Playfair Display */
+.no-ligatures {
+  font-variant-ligatures: none !important;
+  font-feature-settings: "liga" 0, "clig" 0, "calt" 0, "dlig" 0 !important;
+  letter-spacing: 0.08em !important; /* Ajustado a 0.08em */
 }

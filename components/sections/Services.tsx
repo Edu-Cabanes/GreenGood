@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Leaf, Trees, Waves, Users } from "lucide-react";
+import { ArrowRight, Leaf, Trees, Waves, Users, Trash2, Map } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ const services = [
     title: "Césped Artificial",
     desc: "Venta e instalación con materiales de alta gama certificados. Diseñamos espacios duraderos, suaves al tacto y siempre perfectos, sin necesidad de riego ni siega.",
     benefit: "Sin mantenimiento diario",
-    image: "/images/rollo de césped artificial.png",
+    image: "/images/cesped-artificial-rollo.png",
   },
   {
     icon: Trees,
@@ -19,7 +19,7 @@ const services = [
     title: "Jardinería General",
     desc: "Mantenimiento integral de praderas, podas especializadas, control de plagas, abonado profesional y diseño paisajístico.",
     benefit: "Jardines siempre impecables",
-    image: "/images/Jardieria general.png",
+    image: "/images/jardineria-general.png",
   },
   {
     icon: Waves,
@@ -27,7 +27,7 @@ const services = [
     title: "Mantenimiento de Piscinas",
     desc: "Limpieza profunda, análisis de aguas biológico y puesta a punto integral de instalaciones para disfrutar sin preocupaciones.",
     benefit: "Aguas cristalinas óptimas",
-    image: "/images/Mantenimiento de piscina.png",
+    image: "/images/mantenimiento-piscina.png",
   },
   {
     icon: Users,
@@ -35,7 +35,23 @@ const services = [
     title: "Servicios a Comunidades",
     desc: "Conservación de grandes áreas. Unificamos cuidado de jardines, piscinas y limpieza viaria en un solo servicio unificado y fiable.",
     benefit: "Comodidad sin intermediarios",
-    image: "/images/Servicios para Comunidades y Grandes Áreas.png",
+    image: "/images/servicios-grandes-areas.png",
+  },
+  {
+    icon: Trash2,
+    slug: "limpieza-comunes",
+    title: "Limpieza de Zonas",
+    desc: "Servicios de limpieza profunda en áreas comunes. Mantenemos pasos de carruajes, accesos y recintos libres de suciedad con métodos eficaces.",
+    benefit: "Entornos impecables",
+    image: "/images/servicios-urbanizaciones.png"
+  },
+  {
+    icon: Map,
+    slug: "urbanizaciones",
+    title: "Urbanizaciones y Fincas",
+    desc: "Gestión de grandes extensiones. Labores de desbroce, limpieza y mejora paisajística a gran escala con resultados profesionales.",
+    benefit: "Capacidad operativa superior",
+    image: "/images/servicios-limpieza-2.png"
   },
 ];
 
@@ -44,7 +60,7 @@ export default function Services() {
   const rest = services.slice(1);
 
   return (
-    <section id="servicios" className="py-24 bg-cream px-4 overflow-x-hidden">
+    <section id="servicios" className="py-14 md:py-24 bg-cream px-4 overflow-x-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-brand-green font-bold text-sm tracking-[0.2em] uppercase mb-3">
@@ -62,6 +78,7 @@ export default function Services() {
             <Image
               src={featured.image}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover object-center group-hover:scale-105 transition-transform duration-800 ease-out"
               alt={featured.title}
             />
@@ -75,8 +92,8 @@ export default function Services() {
             <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-8">
               <featured.icon className="w-8 h-8 text-accent-green" />
             </div>
-            <h3 className="text-3xl md:text-5xl font-serif font-bold mb-4 tracking-tight">
-              {featured.title}
+            <h3 className="text-3xl md:text-5xl font-serif font-bold mb-4 no-ligatures">
+              <span className="no-ligatures" style={{ letterSpacing: '0.08em' }}>{featured.title}</span>
             </h3>
             <p className="text-slate-300 text-base md:text-lg mb-10 leading-relaxed font-light">
               {featured.desc}
@@ -111,6 +128,7 @@ export default function Services() {
                   <Image
                     src={service.image}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-800 ease-out"
                     alt={service.title}
                   />
@@ -119,7 +137,7 @@ export default function Services() {
                     <div className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur flex items-center justify-center">
                       <Icon className="w-5 h-5 text-white" />
                     </div>
-                    <h3 className="text-xl font-serif text-white font-bold">{service.title}</h3>
+                    <h3 className="text-xl font-serif text-white font-bold no-ligatures">{service.title}</h3>
                   </div>
                 </div>
 

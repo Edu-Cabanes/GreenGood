@@ -19,10 +19,13 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://greengood-nu.vercel.app"),
-  title: "GreenGood | Paisajismo y Jardinería en Salamanca",
+  metadataBase: new URL("https://jardineriagreengood.es"),
+  title: {
+    default: "GreenGood | Paisajismo y Jardinería en Salamanca",
+    template: "%s | GreenGood",
+  },
   description:
-    "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca y alrededores.",
+    "Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca y alrededores. Contacta al 615 667 820.",
   keywords: [
     "jardinería Salamanca",
     "césped artificial Salamanca",
@@ -32,12 +35,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
-      "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca y alrededores.",
-    url: "https://greengood-nu.vercel.app",
+      "Especialistas en césped artificial, mantenimiento integral y piscinas. Contacta al 615 667 820 para tu presupuesto.",
+    url: "https://jardineriagreengood.es",
     siteName: "GreenGood",
     images: [
       {
-        url: "https://greengood-nu.vercel.app/images/share.PNG",
+        url: "https://jardineriagreengood.es/images/greengood-jardineria-salamanca.png",
         width: 1200,
         height: 630,
         alt: "GreenGood - Paisajismo y Jardinería en Salamanca",
@@ -50,8 +53,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
-      "Tu jardín en buenas manos. Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca.",
-    images: ["https://greengood-nu.vercel.app/images/share.PNG"],
+      "Especialistas en césped artificial, mantenimiento integral y piscinas en Salamanca.",
+    images: ["https://jardineriagreengood.es/images/greengood-jardineria-salamanca.png"],
   },
 };
 
@@ -60,9 +63,48 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'LandscapingBusiness',
+    name: 'GreenGood',
+    image: 'https://jardineriagreengood.es/images/greengood-jardineria-salamanca.png',
+    '@id': 'https://jardineriagreengood.es',
+    url: 'https://jardineriagreengood.es',
+    telephone: '+34615667820',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'CALLE SOL',
+      addressLocality: 'PELABRAVO',
+      addressRegion: 'SALAMANCA',
+      postalCode: '37181',
+      addressCountry: 'ES',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 40.9442,
+      longitude: -5.5801,
+    },
+    areaServed: [
+      { '@type': 'City', name: 'Salamanca' },
+      { '@type': 'City', name: 'Santa Marta de Tormes' },
+      { '@type': 'City', name: 'Carbajosa de la Sagrada' },
+      { '@type': 'City', name: 'Villares de la Reina' },
+      { '@type': 'City', name: 'Cabrerizos' },
+      { '@type': 'City', name: 'Pelabravo' },
+      { '@type': 'City', name: 'Aldeatejada' },
+    ],
+    sameAs: [
+      'https://jardineriagreengood.es',
+      'https://maps.google.com/?cid=10520740929451458510'
+    ],
+  };
   return (
     <html lang="es" className={`scroll-smooth ${inter.variable} ${playfair.variable}`}>
       <body className="min-h-screen flex flex-col bg-cream text-anthracite font-sans antialiased overflow-x-hidden">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Navbar />
         <main className="grow">{children}</main>
         <Footer />

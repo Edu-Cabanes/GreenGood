@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidad | GreenGood",
-  description: "Política de Privacidad de Jardinería GreenGood.",
+  title: "Política de Privacidad",
+  description: "Política de Privacidad de Jardinería GreenGood. Información sobre el tratamiento de datos personales conforme al RGPD.",
+  robots: { index: false, follow: true },
 };
 
 export default function PoliticaPrivacidad() {

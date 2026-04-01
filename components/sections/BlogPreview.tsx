@@ -6,30 +6,30 @@ const blogPosts = [
     slug: "mantenimiento-cesped-artificial-guia-completa",
     title: "Mantenimiento del césped artificial: trucos para que dure impecable 15 años",
     category: "Césped Artificial",
-    image: "/images/Instalador Especializado Césped Artificial.png",
-    excerpt: "Mucha gente cree que no necesita cuidados, pero unos pequeños trucos de profesional harán que tu jardín luzca como el primer día durante mucho más tiempo.",
+    image: "/images/instalador-cesped-artificial.png",
+    excerpt: "Hay un mito de que el césped artificial no se cuida. Con cuatro trucos de profesional harás que tu jardín luzca como el primer día durante mucho más tiempo.",
   },
   {
     slug: "cesped-artificial-vs-natural-verano-salmantino",
     title: "Césped artificial vs césped natural: cual aguanta mejor el verano salmantino",
     category: "Césped Artificial",
-    image: "/images/rollo de césped artificial.png",
-    excerpt: "Las temperaturas extremas de la meseta castigan cualquier pradera. Analizamos durabilidad, consumo de agua y mantenimiento real de ambas opciones para que decidas con datos.",
+    image: "/images/cesped-artificial-rollo.png",
+    excerpt: "El verano en Salamanca es un infierno para la hierba. Comparamos el artificial contra el natural: ahorro real de agua, calor acumulado y mantenimiento sin tonterías.",
   },
   {
     slug: "poda-setos-arbustos-primavera-errores",
     title: "Poda de setos y arbustos en primavera: errores que destrozan tus plantas",
     category: "Jardinería",
-    image: "/images/Jardieria general.png",
-    excerpt: "El corte en el momento equivocado puede matar un arbusto en semanas. Te contamos cuándo podar, qué herramientas usar y cómo dejar cada especie con su forma perfecta.",
+    image: "/images/jardineria-general.png",
+    excerpt: "Podar mal en primavera es sentenciar a tus plantas. Te enseñamos a evitar errores típicos, qué herramientas usar y cómo dar forma a cada especie sin matarla.",
   }
 ];
 
 export default function BlogPreview() {
   return (
-    <section id="blog" className="py-28 bg-white px-4">
+    <section id="blog" className="py-16 md:py-28 bg-white px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-16 gap-6">
           <div className="max-w-2xl">
             <p className="text-brand-green font-bold text-sm tracking-[0.2em] uppercase mb-3">
               Nuestro Blog
@@ -63,6 +63,7 @@ export default function BlogPreview() {
                   src={post.image}
                   alt={post.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4 bg-brand-green text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full z-10 shadow-lg">

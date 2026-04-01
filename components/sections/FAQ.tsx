@@ -29,8 +29,25 @@ const faqs = [
 export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
+  };
+
   return (
-    <section className="py-28 bg-cream px-4">
+    <section className="py-16 md:py-28 bg-cream px-4">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-brand-green font-bold text-sm tracking-[0.2em] uppercase mb-3">

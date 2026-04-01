@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Aviso Legal | GreenGood",
-  description: "Aviso legal de Jardinería GreenGood.",
+  title: "Aviso Legal",
+  description: "Aviso legal de Jardinería GreenGood. Identificación del titular, condiciones de uso y propiedad intelectual.",
+  robots: { index: false, follow: true },
 };
 
 export default function AvisoLegal() {
