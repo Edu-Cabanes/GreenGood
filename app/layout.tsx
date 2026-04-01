@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jardineriagreengood.es"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://greengood-nu.vercel.app"),
   title: {
     default: "GreenGood | Paisajismo y Jardinería en Salamanca",
     template: "%s | GreenGood",

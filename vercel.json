@@ -1,15 +1,1 @@
-{
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "greengood-nu.vercel.app"
-        }
-      ],
-      "destination": "https://jardineriagreengood.es/$1",
-      "permanent": true
-    }
-  ]
-}
+{}
