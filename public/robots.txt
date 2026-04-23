@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://jardineriagreengood.es
+Host: https://greengood.es
 
 # Sitemaps
-Sitemap: https://jardineriagreengood.es/sitemap.xml
+Sitemap: https://greengood.es/sitemap.xml

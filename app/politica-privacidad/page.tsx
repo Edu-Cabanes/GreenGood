@@ -21,7 +21,7 @@ export default function PoliticaPrivacidad() {
             <li><strong>NIF:</strong> 70901357Q</li>
             <li><strong>Domicilio:</strong> CALLE SOL, 37181 PELABRAVO SALAMANCA, – España.</li>
             <li><strong>Correo electrónico:</strong> barberocardosodavid@gmail.com</li>
-            <li><strong>Sitio Web:</strong> <a href="https://jardineriagreengood.es">https://jardineriagreengood.es</a></li>
+            <li><strong>Sitio Web:</strong> <a href="https://greengood.es">https://greengood.es</a></li>
           </ul>
         </section>
 

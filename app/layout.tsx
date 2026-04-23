@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://jardineriagreengood.es"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://greengood.es"),
   title: {
     default: "GreenGood | Paisajismo y Jardinería en Salamanca",
     template: "%s | GreenGood",
@@ -67,9 +67,9 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'LandscapingBusiness',
     name: 'GreenGood',
-    image: 'https://jardineriagreengood.es/images/greengood-jardineria-salamanca.png',
-    '@id': 'https://jardineriagreengood.es',
-    url: 'https://jardineriagreengood.es',
+    image: 'https://greengood.es/images/greengood-jardineria-salamanca.png',
+    '@id': 'https://greengood.es',
+    url: 'https://greengood.es',
     telephone: '+34615667820',
     address: {
       '@type': 'PostalAddress',
@@ -94,7 +94,7 @@ export default function RootLayout({
       { '@type': 'City', name: 'Aldeatejada' },
     ],
     sameAs: [
-      'https://jardineriagreengood.es',
+      'https://greengood.es',
       'https://maps.google.com/?cid=10520740929451458510'
     ],
   };

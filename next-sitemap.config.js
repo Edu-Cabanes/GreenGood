@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://jardineriagreengood.es',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://greengood.es',
   generateRobotsTxt: true,
   sitemapSize: 7000,
   exclude: ['/server-sitemap.xml', '/404'],

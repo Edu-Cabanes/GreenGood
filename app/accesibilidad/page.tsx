@@ -20,7 +20,7 @@ export default function Accesibilidad() {
             <strong>DAVID BARBERO CARDOSO</strong> se ha comprometido a hacer accesible su sitio web, de conformidad con el Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público y las directrices WCAG 2.1 del W3C.
           </p>
           <p>
-            La presente declaración de accesibilidad se aplica al sitio web <strong>https://jardineriagreengood.es</strong>.
+            La presente declaración de accesibilidad se aplica al sitio web <strong>https://greengood.es</strong>.
           </p>
         </section>
 
