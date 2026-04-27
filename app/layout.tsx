@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     "mantenimiento jardines Salamanca",
     "piscinas comunidades Salamanca",
   ],
+  icons: {
+    icon: "/images/favicon.png",
+    shortcut: "/images/favicon.png",
+    apple: "/images/favicon.png",
+  },
   openGraph: {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
