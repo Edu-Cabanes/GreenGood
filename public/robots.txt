@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://greengood.es
-
-# Sitemaps
-Sitemap: https://greengood.es/sitemap.xml

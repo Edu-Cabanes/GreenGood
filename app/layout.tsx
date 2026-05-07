@@ -32,11 +32,7 @@ export const metadata: Metadata = {
     "mantenimiento jardines Salamanca",
     "piscinas comunidades Salamanca",
   ],
-  icons: {
-    icon: "/images/favicon.png",
-    shortcut: "/images/favicon.png",
-    apple: "/images/favicon.png",
-  },
+
   openGraph: {
     title: "GreenGood | Paisajismo y Jardinería en Salamanca",
     description:
@@ -108,7 +104,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-cream text-anthracite font-sans antialiased overflow-x-hidden">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\u003c') }}
         />
         <Navbar />
         <main className="grow">{children}</main>
